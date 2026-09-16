@@ -5,10 +5,7 @@ import com.careertracker.dto.StudySessionResponse;
 import com.careertracker.service.StudySessionService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/study-sessions")
@@ -29,5 +26,12 @@ public class StudySessionController {
                 HttpStatus.CREATED
         );
         return responseEntity;
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<StudySessionResponse> getSession(@PathVariable long id) {
+        StudySessionResponse response =
+                studySessionService.getStudySession(id);
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 }

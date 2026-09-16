@@ -2,6 +2,7 @@ package com.careertracker.dto;
 
 public class StudySessionResponse {
 
+    private final long id;
     private final String date;
     private final String topic;
     private final String category;
@@ -9,14 +10,19 @@ public class StudySessionResponse {
     private final String notes;
 
     public StudySessionResponse(
-            String date, String topic, String category,
+            long id, String date, String topic, String category,
             int durationMinutes, String notes
     ) {
+        this.id = id;
         this.date = date;
         this.topic = topic;
         this.category = category;
         this.durationMinutes = durationMinutes;
         this.notes = notes;
+    }
+
+    public long getId() {
+        return this.id;
     }
 
     public String getDate() {
