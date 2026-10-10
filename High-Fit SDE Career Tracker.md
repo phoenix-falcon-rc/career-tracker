@@ -1,4 +1,4 @@
-
+<a id="top"></a>
 <div align="center">
 
 # 🚀 High-Fit SDE Career Tracker
@@ -1945,5 +1945,3 @@ If you try it, improve it, or have suggestions, I'd be happy to hear about your 
 [⬆️ Back to Top](#top)
 
 </div>
-
-<a id="top"></a>
