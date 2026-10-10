@@ -1,178 +1,203 @@
 <div align="center">
 
 # 🚀 CareerOS
-### AI-Powered Job Search & Interview Preparation Tracker
 
-**One career command center. Two persistent trackers. Evidence-backed decisions.**
+### The AI-Powered Job Search & Interview Preparation System
 
-![Setup](https://img.shields.io/badge/Quick_Setup-10%E2%80%9315_min-2563eb?style=for-the-badge)
-![Assessment](https://img.shields.io/badge/Self_Evaluation-1%E2%80%932_hours-7c3aed?style=for-the-badge)
-![Prompts](https://img.shields.io/badge/Copy--Paste_Prompts-18-059669?style=for-the-badge)
-![Templates](https://img.shields.io/badge/Spreadsheet_Templates-2-f59e0b?style=for-the-badge)
+**Discover better opportunities. Track every application. Prepare with evidence. Make smarter career decisions.**
 
-*A reusable ChatGPT + Google Sheets + Gmail + Calendar workflow for career planning, job discovery, application tracking, and interview readiness.*
+<kbd>⚡ 10–15 min kickoff</kbd> &nbsp; <kbd>🧠 1–2 hr self-evaluation</kbd> &nbsp; <kbd>🧩 18 copy-paste prompts</kbd> &nbsp; <kbd>📊 2 persistent trackers</kbd>
 
-[⚡ Quick Start](#-quick-start) · [🧠 How It Works](#-how-it-works) · [📋 Trackers](#-the-two-trackers) · [🪄 Prompt Library](#-complete-prompt-library) · [🔁 Commands](#-daily-commands) · [🔐 Privacy](#-privacy--safety)
+*A complete, standalone, copy-and-paste guide for building your own career-management workflow with ChatGPT and, optionally, Google Sheets, Gmail and Google Calendar.*
+
+**[🚀 Start here](#quick-start) · [🧠 Self-evaluation](#self-evaluation) · [🪄 All prompts](#prompt-library) · [🔁 Commands](#commands) · [💬 Contact](#contact)**
 
 </div>
 
 > [!IMPORTANT]
-> **10–15 minutes** is the target for creating the structure and configuring the workflows, *not* for processing years of emails or completing a thorough assessment. Allow **1–2 hours** for the guided self-evaluation. A comprehensive first scan can take longer.
-
-## ✨ What is CareerOS?
-
-CareerOS is a **prompt-driven career-management system** designed for people who want more than a list of job postings.
-
-| 🔎 Find the right jobs | 📬 Stay on top of applications | 🧠 Get interview-ready | 📊 Keep the evidence |
-|---|---|---|---|
-| Search by responsibilities and transferable skills, not title alone | Reconcile recruiter threads, interview invites, deadlines and rejections | Identify real skill gaps, practice deliberately, defend your resume | Maintain durable Google Sheets and append-only histories |
-| Verify direct job links and distinct requisitions | Separate confirmed statuses from assumptions | Distinguish knowledge from independently demonstrated performance | Keep application and preparation data connected |
-
-### Built from real iteration
-
-This is a **generalized reconstruction** of a workflow refined between **late July and October 2026**. It captures the architecture, prompts, scoring, tracking and safeguards that emerged over time. The prompts are consolidated starter templates, **not verbatim historical transcripts**.
-
----
-
-## ⚡ Quick Start
-
-### Prerequisites
-
-- A ChatGPT account with the relevant features available.
-- Your current resume (PDF or DOCX).
-- A Google account for **Drive / Sheets** (recommended).
-- Optional connections to **Gmail** and **Google Calendar**.
-- Optionally, 2–5 example job descriptions and a list of jobs already applied for.
+> **This document is intentionally self-contained.** All setup instructions, tracker schemas, copy-and-paste prompts, checklists and operating rules live **in this one Markdown file**. You do not need to download any spreadsheet templates, ZIP files, or additional prompt documents. All navigation links inside this guide jump to sections of this same file; the only external link is the author's LinkedIn contact.
 
 > [!NOTE]
-> Connected app availability and permissions vary by account, plan, organization and region. The workflow works manually without Gmail/Calendar access, but automatic reconciliation requires the relevant connection and permission.
-
-### ⏱️ The 15-minute launch plan
-
-| Time | Action | Result |
-|:---:|---|---|
-| **0–2 min** | Gather resume, target roles, location, compensation expectations and constraints | Candidate inputs ready |
-| **2–5 min** | Open ChatGPT **Settings → Plugins** or the plugin directory; connect Drive, Gmail and Calendar where available | Authorized sources connected |
-| **5–7 min** | Create two conversations: **Job Tracker** and **Career Prep Tracker** | Separate ownership |
-| **7–10 min** | Upload your resume; use [Prompt 1](#prompt-1--bootstrap-profile-and-architecture-paste-into-job-tracker-chat), then create/adopt your sheets | Initial trackers |
-| **10–12 min** | Apply [job rules](#prompt-4--permanent-job-tracker-rules-paste-into-job-tracker-chat) and [prep rules](#prompt-5--permanent-prep-tracker-rules-paste-into-prep-tracker-chat) | Persistent operating rules |
-| **12–15 min** | Test one manual Gmail scan or application update; begin self-evaluation when ready | Verified baseline |
-
-**Fastest path:** Upload a resume, then paste the [one-prompt bootstrap](#k-if-the-user-wants-the-absolute-simplest-setup) into ChatGPT.
-
-<details>
-<summary><strong>📁 Suggested GitHub repository layout</strong></summary>
-
-```text
-career-os/
-├── README.md
-├── templates/
-│   ├── Job_Application_Master_Template.xlsx
-│   └── Career_Prep_Master_Template.xlsx
-└── prompts/
-    └── Copy_Paste_Prompts_Only.md
-```
-
-Copy the two `.xlsx` files from the [starter pack](./Career_Tracker_Starter_Pack.zip) into `templates/`, and the prompts Markdown into `prompts/`. If you use a different folder layout, adjust these relative links.
-
-</details>
+> **About this repository:** CareerOS is a standalone documentation/prompt workflow shared alongside a separate software project. It is **not** a feature, dependency, or module of the Java/Spring Boot application in this repository. You can use CareerOS without cloning, building, or running that application.
 
 ---
 
-## 🧠 How It Works
+<a id="overview"></a>
+## ✨ What is CareerOS?
+
+CareerOS is a **prompt-driven career-management system** for people who want to make decisions based on real evidence instead of juggling job boards, scattered notes, spreadsheets and interview emails.
+
+| 🔎 Discover | 📬 Reconcile | 🧠 Prepare | 📊 Remember |
+|---|---|---|---|
+| Search by responsibilities and transferable experience, not title alone | Track employer messages, interview invitations, follow-ups and rejections | Identify real gaps and practice the skills interviews demand | Maintain a durable application history and an evidence-based study log |
+| Verify official postings and distinct requisitions | Distinguish verified statuses from guesses | Distinguish exposure from independent implementation | Keep readiness and job-fit judgments separate |
+
+### 🧭 Where this came from
+
+The system was refined through an actual job-search and interview-preparation workflow between **late July and October 2026**. Its reusable prompts have been consolidated and generalized; they are **not verbatim historical transcripts**. Personal details, private Sheet links and candidate-specific facts are intentionally excluded.
+
+### 🧰 What you need
+
+| Required to begin | Optional, for a more connected workflow |
+|---|---|
+| ChatGPT access; current resume or career summary; target role(s) and location | Google Drive / Google Sheets, Gmail, Google Calendar, current job descriptions, application history |
+
+> [!NOTE]
+> Connected app features vary by account, permissions and organization. **Prompts cannot grant capabilities you do not have.** If an integration is unavailable, follow the manual workflow and do not treat a proposed write, search or automation as completed.
+
+---
+
+<a id="quick-start"></a>
+## ⚡ Quick Start — What You Can Actually Do in 15 Minutes
+
+The **10–15 minutes are for starting the system**, not for completing a full historical reconciliation, creating a perfect dashboard, evaluating every skill, or running a comprehensive job search. Those are separate tasks.
+
+| Time | What you do | Expected outcome |
+|:---:|---|---|
+| **0–3 min** | Prepare your resume and basic career goals | Candidate input ready |
+| **3–6 min** | Open ChatGPT, check which Google integrations are available, and authorize only the ones you want | Access confirmed or manual mode selected |
+| **6–8 min** | Create two chats: **Job Tracker** and **Career Prep Tracker** | Clear division of responsibilities |
+| **8–11 min** | Upload the resume in Job Tracker; paste [Prompt 1](#prompt-1) | Initial candidate profile and missing questions |
+| **11–15 min** | Review the proposed architecture, paste [Prompt 2](#prompt-2) / [Prompt 3](#prompt-3) when ready, and bookmark the [command reference](#commands) | Setup underway with an explicit next step |
+
+**After kickoff, budget separately:**
+
+- **~15–45+ minutes** to build and verify two Google Sheets, depending on tool access and whether you use the [manual sheet schemas](#manual-sheets).
+- **~1–2 hours** for the guided [self-evaluation](#self-evaluation), ideally in one or two sittings.
+- **Variable additional time** for importing historical applications, reading past emails, checking live job listings and configuring scheduled updates.
+
+> [!TIP]
+> **Fastest possible start:** Upload a resume and paste the [single bootstrap prompt](#one-prompt). Add the deeper rules and integrations later. You can use this guide even if you never connect Google.
+
+### 🔌 Optional connections
+
+1. In ChatGPT, open **Settings → Plugins** (or the available app/connection directory).
+2. Look for **Google Drive**, **Gmail**, and **Google Calendar**. Connect only what you need and review the permissions.
+3. Confirm access with a simple, non-sensitive test. Do not assume a connection works just because it appears enabled.
+4. If a connection is unavailable, supply the relevant information manually and use Google Sheets directly in your browser.
+
+---
+
+<a id="architecture"></a>
+## 🧠 How the System Works
 
 ```mermaid
 flowchart TD
-    A["👤 Resume + Goals + Constraints"] --> B["🤖 ChatGPT Career Strategist"]
-    E["📨 Gmail / Recruiter Threads"] --> B
-    F["🗓️ Calendar / Interview Invites"] --> B
-    G["🌐 Official Job Postings"] --> B
-
+    A["👤 Resume + Career Goals"] --> B["🤖 ChatGPT Career Strategy"]
+    C["📨 Gmail / Recruiter Threads — optional"] --> B
+    D["🗓️ Calendar / Interview Schedule — optional"] --> B
+    E["🌐 Verified Job Descriptions"] --> B
     B --> J["📊 Job Application Master Tracker"]
     B --> P["📚 Career Prep Master Tracker"]
-
-    J -->|JD gaps + upcoming interviews| P
-    P -->|Demonstrated skills + readiness| J
-
-    J --> R["🎯 Prioritized Applications & Follow-ups"]
-    P --> S["💻 Targeted Practice & Mock Interviews"]
-
-    R --> H["📝 Status History"]
-    S --> L["📝 Daily Evidence Log"]
+    J -->|"Job requirements + interview dates"| P
+    P -->|"Demonstrated skills + readiness"| J
+    J --> X["🎯 Applications, follow-ups and decisions"]
+    P --> Y["💻 Targeted practice and interview confidence"]
+    J --> H["📝 Status History"]
+    P --> L["📝 Daily Evidence Log"]
 ```
 
-**The central principle:** job requirements inform the preparation plan; actual demonstrated preparation changes interview readiness. **Google Sheets stores the record** so each new conversation or run does not have to recreate the past.
+**The core principle:** A job description is evidence of market demand; a successful independent solution or a defended project is evidence of readiness. Do not confuse the two.
 
 ---
 
+<a id="trackers"></a>
 ## 📋 The Two Trackers
 
-<table>
-<tr>
-<th>💼 Job Application Master Tracker</th>
-<th>🎓 Career Prep Master Tracker</th>
-</tr>
-<tr>
-<td>
-
-**Six tabs**
-
-1. `Dashboard`
-2. `Applications Master`
-3. `Active Pipeline`
-4. `Watchlist`
-5. `Status History`
-6. `How to Update`
-
-**Answers:** *Where should I apply? Who replied? What is due? What changed?*
-
-</td>
-<td>
-
-**Five tabs**
-
-1. `Dashboard`
-2. `Static Syllabus`
-3. `Daily Log`
-4. `Execution Schedule`
-5. `How to Update`
-
-**Answers:** *What am I missing? What have I actually mastered? What should I study next?*
-
-</td>
-</tr>
-</table>
-
-### 📥 Spreadsheet templates
-
-| File | Contents |
+| 💼 Job Application Master Tracker | 🎓 Career Prep Master Tracker |
 |---|---|
-| [`Job_Application_Master_Template.xlsx`](./templates/Job_Application_Master_Template.xlsx) | Six-tab job pipeline, scoring, watchlist and status history |
-| [`Career_Prep_Master_Template.xlsx`](./templates/Career_Prep_Master_Template.xlsx) | Five-tab prep dashboard, syllabus, study log and schedule |
-| [`Copy_Paste_Prompts_Only.md`](./prompts/Copy_Paste_Prompts_Only.md) | All 18 reusable prompts |
+| `Dashboard` | `Dashboard` |
+| `Applications Master` | `Static Syllabus` |
+| `Active Pipeline` | `Daily Log` |
+| `Watchlist` | `Execution Schedule` |
+| `Status History` | `How to Update` |
+| `How to Update` | |
+| **Answers:** Where should I apply? Who replied? What changed? What is urgent? | **Answers:** What do I know? What can I demonstrate? What should I study next? |
 
-**Import:** Upload each `.xlsx` to your own Google Drive → open with Google Sheets → use that newly created Sheet URL in ChatGPT. Do not point a public starter repo at anyone's private Google Sheet.
+> [!IMPORTANT]
+> Create the Sheets in **your own Google Drive**, if you want persistent spreadsheets. This public Markdown guide includes the entire workbook design; there are **no external template downloads** and no links to someone else's private files.
+
+<a id="manual-sheets"></a>
+### 📑 Create the Sheets Manually (No Template Files Required)
+
+If ChatGPT can create and edit Google Sheets, use [Prompt 2](#prompt-2) and [Prompt 3](#prompt-3). Otherwise, create two blank Google Sheets yourself, name the tabs exactly as shown above, and paste the following **tab-separated headers** into cell `A1` of each named tab. The full prompts describe dashboard and update rules.
+
+<details>
+<summary><strong>📊 Job tracker — Applications Master columns</strong></summary>
+
+```tsv
+App ID	Company	Role	Location	Arrangement	Track	Channel	Req / Job ID	Applied Date	Posting Status	Application Status	Current Stage	Latest Status Date	Interview Date / Time	Contact / Recruiter	Compensation	Resume Fit /10	Interview Readiness /10	Low-Hanging /10	Priority	Next Action	Action Due	Key Fit	Key Gaps	Source / Evidence	Job URL	Gmail Verified Date	Notes
+```
+
+</details>
+
+<details>
+<summary><strong>🚦 Job tracker — Active Pipeline columns</strong></summary>
+
+```tsv
+Priority	App ID	Company	Role	Application Status	Current Stage	Interview / Due	Contact	Compensation	Resume Fit	Readiness	Next Action	Prep Focus	Latest Status	Days Since Update	Risk / Blocker	Outcome	Notes
+```
+
+</details>
+
+<details>
+<summary><strong>🔎 Job tracker — Watchlist columns</strong></summary>
+
+```tsv
+Watch ID	Company	Role	Location	Arrangement	Posting Status	Resume Fit /10	Readiness /10	Realistic Conversion /10	Priority	Why It Matters	Key Gaps	Next Action	Source Confidence	Last Verified	Notes
+```
+
+</details>
+
+<details>
+<summary><strong>🗂️ Job tracker — Status History columns</strong></summary>
+
+```tsv
+Date	App ID	Company	Role	Event	Old Status	New Status	Source	Action / Outcome	Notes
+```
+
+</details>
+
+<details>
+<summary><strong>🎯 Prep tracker — Static Syllabus columns</strong></summary>
+
+```tsv
+Track	Seq	Milestone / Topic	Target Depth	Status	Progress %	Evidence / Completion Criteria	Target Phase	Last Updated	Notes
+```
+
+</details>
+
+<details>
+<summary><strong>📓 Prep tracker — Daily Log columns</strong></summary>
+
+```tsv
+Date	Track	Hours (only if confirmed)	What I Did	Evidence / Problems / Project	Milestone Updated	Progress Before %	Progress After %	Interview / Reason	Next Step
+```
+
+</details>
+
+**For `Dashboard`, `Execution Schedule`, and `How to Update`:** create the tabs, then let the corresponding prompts populate them when write access exists, or use them manually for summaries, weekly study windows, status definitions and update rules. Freeze row 1, turn on filters, and preserve existing rows when making changes.
 
 ---
 
-## 🪄 Complete Prompt Library
+<a id="prompt-library"></a>
+## 🪄 All 18 Copy-and-Paste Prompts
 
-The handbook below contains **all 18 copy-paste prompts**, organized by setup, assessment, daily operations and automations.
-
-| Stage | Prompts | What they do |
+| Stage | Prompts | Purpose |
 |---|---|---|
-| 🏗️ Setup | **1–5** | Candidate profile, both Sheets and permanent operating rules |
-| 🧪 Assessment | **6** | Guided 1–2-hour evaluation |
-| 🔁 Daily operations | **7–16** | Gmail scan, reruns, status updates, interview prep, code review, offer decisions and audits |
-| ⏰ Optional automation | **17–18** | Schedule verified recurring workflows |
+| 🏗️ Initialize | [1](#prompt-1), [2](#prompt-2), [3](#prompt-3), [4](#prompt-4), [5](#prompt-5) | Candidate profile, Sheets and durable operating rules |
+| 🧪 Evaluate | [6](#prompt-6) | Guided 1–2-hour assessment |
+| 🔁 Operate | [7](#prompt-7), [8](#prompt-8), [9](#prompt-9), [10](#prompt-10), [11](#prompt-11), [12](#prompt-12), [13](#prompt-13), [14](#prompt-14), [15](#prompt-15), [16](#prompt-16) | Email, jobs, prep, decisions and audits |
+| ⏰ Automate (optional) | [17](#prompt-17), [18](#prompt-18) | Scheduled runs after manual verification |
 
 > [!TIP]
-> You do **not** need to paste all 18 prompts at once. Use Prompts 1–5 for setup, Prompt 6 for evaluation, and the remaining prompts when their workflows become relevant.
+> You do **not** need to paste every prompt on day one. Use the relevant prompt when you reach that stage. Each code block is designed to be copied directly into ChatGPT.
 
 ---
+<a id="setup-prompts"></a>
+## 🏗️ Stage 1 — Set Up the System
 
-## C. Copy-and-paste prompts — setup
-
+<a id="prompt-1"></a>
 ### PROMPT 1 — Bootstrap Profile and Architecture (paste into Job Tracker chat)
 
 ```text
@@ -191,6 +216,7 @@ Do not invent resume accomplishments, job status, compensation, qualifications, 
 Use my own Google Drive if connected. Never create duplicate trackers if one already exists. Ask before sending emails or making calendar changes.
 ```
 
+<a id="prompt-2"></a>
 ### PROMPT 2 — Create the Job Application Google Sheet (paste into Job Tracker chat)
 
 ```text
@@ -219,6 +245,7 @@ Date | App ID | Company | Role | Event | Old Status | New Status | Source | Acti
 Format with frozen headers, filters, date formats, clear column widths and status dropdowns. Use formulas for dashboard counts. Leave uncertain values blank or marked Unverified. Populate only from evidence. Report the created/adopted spreadsheet URL, tab names, and one sample update. If Drive write access is unavailable, tell me and give me an importable workbook/template instead.
 ```
 
+<a id="prompt-3"></a>
 ### PROMPT 3 — Create the Career Prep Google Sheet (paste into Prep Tracker chat)
 
 ```text
@@ -242,6 +269,7 @@ Use a weighted skills dashboard whose weights add to 100. Let me approve the wei
 Preserve past achievements and practice history. Never fabricate study hours or raise progress without demonstrated evidence. Report the Sheet URL and the first recommended next action.
 ```
 
+<a id="prompt-4"></a>
 ### PROMPT 4 — Permanent Job Tracker Rules (paste into Job Tracker chat)
 
 ```text
@@ -265,6 +293,7 @@ Operating rules:
 At the end of each update provide: what changed, why it matters, what I should do today, what remains uncertain, and the source/verification date.
 ```
 
+<a id="prompt-5"></a>
 ### PROMPT 5 — Permanent Prep Tracker Rules (paste into Prep Tracker chat)
 
 ```text
@@ -283,10 +312,12 @@ End each substantive session with: What we covered, Evidence of mastery, Open mi
 
 ---
 
-## D. The 1–2 Hour Self-Evaluation
+<a id="self-evaluation"></a>
+## 🧪 Stage 2 — The 1–2 Hour Self-Evaluation
 
 **Purpose:** Separate professional experience, familiarity, practical implementation, and live-interview fluency. Self-rating alone is not enough. Use **Prompt 6** in the Prep chat, then answer the sections below. Allocate 10–15 minutes for profile/targets, 20–30 minutes for experience and project defense, 35–50 minutes for skills and independent questions, 15–20 minutes for scenarios, and 10 minutes for scheduling/prioritization.
 
+<a id="prompt-6"></a>
 ### PROMPT 6 — Guided Self-Evaluation Interview
 
 ```text
@@ -342,8 +373,10 @@ A historical SDET syllabus in this workflow used weights totaling 100: Java 18, 
 
 ---
 
-## E. Copy-and-paste prompts — daily operation
+<a id="daily-operations"></a>
+## 🔁 Stage 3 — Daily Operations
 
+<a id="prompt-7"></a>
 ### PROMPT 7 — `RERUN GMAIL` (manual status-only scan)
 
 ```text
@@ -354,6 +387,7 @@ Read plausible message bodies and threads. Identify application confirmations, r
 Report: urgent actions, interviews and deadlines, material status changes, pending recruiter replies, unresolved uncertainties, and exact tracker changes. If access is unavailable, say what was not checked; never claim a successful scan without evidence.
 ```
 
+<a id="prompt-8"></a>
 ### PROMPT 8 — `RERUN` (incremental jobs + applications)
 
 ```text
@@ -362,6 +396,7 @@ RERUN. In the Job Tracker chat, perform a fresh Gmail-first delta reconciliation
 Use responsibility-first matching and my approved locations, salary, travel and career constraints. Score fit, readiness, realistic conversion, growth and preparation cost separately. Report material changes, strongest new roles, next actions, interview prep implications and uncertain links. Keep unchanged rows concise.
 ```
 
+<a id="prompt-9"></a>
 ### PROMPT 9 — `FULL DEEP RERUN` (comprehensive rebuild of the market picture)
 
 ```text
@@ -381,6 +416,7 @@ FULL DEEP RERUN. Execute the comprehensive workflow in this exact order:
 Every new recommended job needs its direct link when available. Do not silently substitute generic alerts, outdated postings or invented availability for a deep rerun. Tell me if any source could not be accessed.
 ```
 
+<a id="prompt-10"></a>
 ### PROMPT 10 — Mark an application or status change
 
 ```text
@@ -396,6 +432,7 @@ Notes / Next Action: [DETAILS]
 Check for an existing exact requisition first. Update the correct application row, append Status History, update Active Pipeline if action is required, refresh dashboard counts, and confirm what changed. Do not create a duplicate or erase earlier statuses.
 ```
 
+<a id="prompt-11"></a>
 ### PROMPT 11 — Interview-specific preparation
 
 ```text
@@ -404,6 +441,7 @@ Prepare me for [COMPANY] — [ROLE] — [INTERVIEW DATE/TIME]. Read the actual J
 Produce: expected round format, top technical/behavioral themes, must-know topics, likely coding language(s), high-risk gaps, resume claims likely to be challenged, and a realistic study schedule that respects existing commitments. Do not replace the fixed syllabus; temporarily overlay interview-critical work. Use theory -> examples -> independent exercises -> mock interview. Update readiness only from actual performance.
 ```
 
+<a id="prompt-12"></a>
 ### PROMPT 12 — Resume defense and STAR bank
 
 ```text
@@ -412,24 +450,28 @@ Interrogate my resume as a skeptical senior interviewer. Take one project at a t
 Build a defensible project/behavioral story bank with: question, concise answer, deep follow-ups, supporting evidence, gaps, and a 2-minute and 5-minute version. Do not move to the next project until I can defend the current one.
 ```
 
+<a id="prompt-13"></a>
 ### PROMPT 13 — Guided study session
 
 ```text
 Continue my Career Prep Master Tracker from RESUME FROM HERE. Use the syllabus and Daily Log to identify the next unfinished concept. Teach theory first, show a worked example, then ask conceptual questions, then give ONE coding/design problem. Do not reveal the full solution before my attempt. Review correctness, syntax, complexity, edge cases and explanation. Track mistakes separately from unfamiliarity with the concept. Afterward update the Sheet only with demonstrated evidence and state the exact next step.
 ```
 
+<a id="prompt-14"></a>
 ### PROMPT 14 — End-of-day prep update
 
 ```text
 Update my existing Career Prep Master Tracker for today's actual work. Read this conversation's substantive practice, code, exercises, mock interviews and implementation evidence. Append to Daily Log; update only justified Static Syllabus milestones and dashboard scores. Distinguish exposure, conceptual understanding, implementation with help, independent implementation and interview-ready fluency. Never invent hours. Do not mark a topic mastered because I read an explanation. Summarize progress, open mistakes, tomorrow's priorities and RESUME FROM HERE.
 ```
 
+<a id="prompt-15"></a>
 ### PROMPT 15 — Offer comparison and decision
 
 ```text
 Compare my current offer(s) against active interview opportunities and career goals. Use verified compensation, location, work arrangement, benefits, technical ownership, growth, risk, start date, commute/travel, family constraints and realistic probability of securing alternatives. Separate known terms from assumptions. Explain opportunity cost and what I gain/lose by waiting, negotiating or accepting. Do not assume a higher title is automatically better. Recommend next actions and any recruiter communication to draft; do not send anything without permission.
 ```
 
+<a id="prompt-16"></a>
 ### PROMPT 16 — Monthly audit / reset without losing history
 
 ```text
@@ -438,7 +480,8 @@ Audit both existing trackers and the last 30 days of evidence. Reconcile stale a
 
 ---
 
-## F. Status, scoring, and decision rules
+<a id="scoring"></a>
+## 📈 Scoring, Status and Decision Rules
 
 ### Status vocabulary
 
@@ -484,16 +527,19 @@ Every material event creates a dated Status History entry. The Applications Mast
 
 ---
 
-## G. Automations (optional, only after manual runs work)
+<a id="automations"></a>
+## ⏰ Stage 4 — Optional Automations
 
 The historical system evolved toward a **daily 8:00 AM job rerun** and a separate **11:50 PM preparation update** in the candidate's time zone. These are examples, not universal times. In the original workflow, duplicate tasks were disabled when consolidated. Importantly, the preparation automation was later disabled; a setup guide must not assume a task is running just because it was once created.
 
+<a id="prompt-17"></a>
 ### PROMPT 17 — Schedule the job rerun
 
 ```text
 Create ONE recurring automation named "My High-Fit Job Tracker" at [TIME] every day in [IANA TIME ZONE]. Each run should execute the FULL DEEP RERUN prompt in my Job Tracker conversation, update only my existing Job Application Master Tracker Sheet [URL], and deliver its report to the appropriate tracker conversation. Do not create a new Sheet or a duplicate automation. Check for existing tasks before adding one, and verify the new task is enabled. If the platform cannot guarantee delivery to the original chat, tell me rather than promising it.
 ```
 
+<a id="prompt-18"></a>
 ### PROMPT 18 — Schedule the prep update
 
 ```text
@@ -504,7 +550,8 @@ Create ONE recurring automation named "My Career Prep Update" at [TIME] every da
 
 ---
 
-## H. Ten-minute smoke test
+<a id="smoke-test"></a>
+## 🧪 Acceptance Test — Verify the System
 
 1. **Sheets:** Ask ChatGPT to list both workbook titles and exact tabs; verify the intended URLs, not lookalike copies.
 2. **Write test:** Add one dummy Watchlist entry and one dummy Daily Log entry (clearly marked TEST); verify both appear in the right sheets, then remove them on request. Never overwrite historical data.
@@ -517,7 +564,8 @@ Create ONE recurring automation named "My Career Prep Update" at [TIME] every da
 
 ---
 
-## I. What the historical build taught us
+<a id="evolution"></a>
+## 🕰️ How the System Evolved (July–October 2026)
 
 **Late July — baseline first.** The workflow began with a career transition and a frank readiness assessment. The user needed fundamentals, a practical schedule, project evidence and regular interview-style checks, not simply a list of learning resources.
 
@@ -541,7 +589,8 @@ Create ONE recurring automation named "My Career Prep Update" at [TIME] every da
 
 ---
 
-## J. One-page quick-reference commands
+<a id="commands"></a>
+## ⌨️ Command Reference
 
 | Command | Where | Meaning |
 |---|---|---|
@@ -558,7 +607,8 @@ Create ONE recurring automation named "My Career Prep Update" at [TIME] every da
 
 ---
 
-## K. If the user wants the absolute simplest setup
+<a id="one-prompt"></a>
+## ⚡ One-Prompt Bootstrap
 
 Paste this one prompt into a new chat after uploading a resume:
 
@@ -566,76 +616,87 @@ Paste this one prompt into a new chat after uploading a resume:
 Build me a complete two-part career management system in my own Google Drive: (1) Job Application Master Tracker with Dashboard, Applications Master, Active Pipeline, Watchlist, Status History, and How to Update; (2) Career Prep Master Tracker with Dashboard, Static Syllabus, Daily Log, Execution Schedule, and How to Update. First analyze my resume, ask essential questions about goals, geography, compensation and constraints, and identify the relevant connected Gmail, Calendar and Drive accounts. Do not invent experience, applications, status or study progress. Use one row per distinct requisition, append-only history, direct verified official job links, separate fit/readiness/conversion scores, responsibility-first matching, Gmail-first status reconciliation, and an evidence-based syllabus. Give me the two Sheet links, the exact operating rules, a guided 1–2 hour self-evaluation, and the commands RERUN GMAIL, RERUN, FULL DEEP RERUN, PREP SESSION, and END-OF-DAY PREP UPDATE. Do not schedule recurring tasks until we have tested one manual run and I approve the schedule.
 ```
 
-**Recommended starting point:** Use the 10–15 minute setup first, then complete the self-evaluation before trusting readiness scores. The value comes from the discipline of evidence, history, and prioritization—not from having a large spreadsheet.
+**Recommended starting point:** Use the 10–15 minute kickoff first, then complete the self-evaluation before trusting readiness scores. The value comes from the discipline of evidence, history, and prioritization—not from having a large spreadsheet.
 
 
 ---
 
-## 🔁 Daily Commands
-
-| Command | Chat | Use it for |
-|---|---|---|
-| `RERUN GMAIL` | Job Tracker | Reconcile applications and recruiter email without a broad new search |
-| `RERUN` | Job Tracker | Incremental application reconciliation + new verified roles |
-| `FULL DEEP RERUN` | Job Tracker | Broad search, source verification, deduplication, scoring and prioritized actions |
-| `APPLIED: [company, req ID, date]` | Job Tracker | Record a newly submitted application |
-| `INTERVIEW: [company, round, time]` | Both | Update pipeline and preparation priorities |
-| `PREP SESSION` | Prep Tracker | Theory → examples → questions → independent practice |
-| `REVIEW MY CODE` | Prep Tracker | Interviewer-style review without immediate full solutions |
-| `END-OF-DAY PREP UPDATE` | Prep Tracker | Log evidence and update demonstrated readiness |
-| `MONTHLY AUDIT` | Both | Reconcile stale statuses and adjust plans without deleting history |
-
----
-
-## 🔐 Privacy & Safety
+<a id="privacy"></a>
+## 🔐 Privacy, Safety and Honest Automation
 
 > [!CAUTION]
-> Never commit private resume details, personal email exports, recruiter messages, compensation negotiations, passwords, API tokens, or private Google Sheet URLs to a **public GitHub repository**.
+> **This guide is designed for public sharing, not for publishing personal career data.** Keep resumes containing private details, employer correspondence, immigration documents, passwords, API tokens, private Sheet URLs, and compensation negotiations out of public repositories.
 
-- Connect only the accounts and permissions needed for the task.
-- Require explicit approval before sending email, submitting an application, or changing calendar events.
-- Preserve rejections and completed applications as history rather than deleting them.
-- Do not invent job availability, interview times, applicant status, salary, or study hours.
-- Do not equate a scheduled automation with a **verified successful run**. Check what sources were actually accessed and what was updated.
-- Avoid duplicate scheduled jobs and duplicate authoritative spreadsheets.
-- Treat self-assessed skill ratings as provisional until backed by examples or independent practice.
+- Connect only the accounts and permissions you need.
+- Ask for explicit authorization before sending an email, applying for a job or changing calendar events.
+- Keep rejected and closed applications in history, but do not publish the personal history itself.
+- Never fabricate a job opening, interview time, compensation figure, study hours, application status or skill mastery.
+- **Scheduled ≠ successfully executed.** Check last-run time, actual source access, Sheet updates and where the report appeared.
+- Avoid duplicate trackers, duplicate scheduled tasks and unverified links.
+- Treat scores as provisional until supported by independent evidence.
 
-## ❓ FAQ
+---
+
+<a id="faq"></a>
+## ❓ Frequently Asked Questions
 
 <details>
-<summary><strong>Can I use CareerOS without Google integrations?</strong></summary>
+<summary><strong>Do I need Google Sheets, Gmail or Calendar to use CareerOS?</strong></summary>
 
-Yes. Paste your resume, provide application updates manually, and use the spreadsheet templates locally. Gmail/Calendar reconciliation and automatic Sheet writes require compatible connections and permissions.
+No. You can start with a resume and ChatGPT, keep manual records, and create Sheets later. The optional connections make reconciliation and persistent updates more convenient when available.
 
 </details>
 
 <details>
-<summary><strong>Will the system automatically apply to jobs or send recruiters emails?</strong></summary>
+<summary><strong>Where are the spreadsheet templates and prompt files?</strong></summary>
 
-Not by default. The prompts explicitly separate recommendations and drafts from external actions. Sending messages, submitting applications and changing events should require your authorization and supported capabilities.
-
-</details>
-
-<details>
-<summary><strong>Why keep two separate trackers?</strong></summary>
-
-A job posting is evidence of market demand; a solved problem or a defended project is evidence of preparation. Separating the records prevents a long list of requirements from being mistaken for actual learning progress.
+**In this document.** The [two-tracker section](#trackers) defines the workbooks; the [manual sheet schemas](#manual-sheets) provide copy-paste headers; the [prompt library](#prompt-library) contains all 18 complete prompts. No external download or separate file is required.
 
 </details>
 
 <details>
-<summary><strong>Does a 90% resume match mean 90% interview readiness?</strong></summary>
+<summary><strong>Does CareerOS automatically send emails or apply to jobs?</strong></summary>
 
-No. Resume fit, current interview readiness, realistic conversion probability and career-growth value are separate judgments. Each needs its own evidence and uncertainty.
+Not by default. The prompts recommend and draft; external actions require user approval and supported tool permissions. Never assume an action happened without confirmation.
 
 </details>
 
 <details>
-<summary><strong>Can this work for careers outside software engineering?</strong></summary>
+<summary><strong>Why two trackers instead of one?</strong></summary>
 
-Yes. Replace the technical syllabus with role-specific skills, certifications, case studies, portfolio work or practical interview tasks. The tracking architecture is profession-agnostic.
+One tracker records **market opportunities and application evidence**; the other records **actual preparation and demonstrated readiness**. They inform one another without confusing demand with mastery.
 
 </details>
+
+<details>
+<summary><strong>Can someone outside software engineering use this?</strong></summary>
+
+Yes. Replace coding, frameworks and system design with the competencies, practical exercises, case studies, portfolios and interview formats relevant to your profession. Keep the same evidence, history and decision rules.
+
+</details>
+
+<details>
+<summary><strong>Does a high resume-fit score guarantee interview success?</strong></summary>
+
+No. Resume fit, current interview readiness, realistic conversion probability, compensation and career growth are separate judgments. Record the supporting evidence and uncertainty for each.
+
+</details>
+
+<details>
+<summary><strong>Is this guide related to the Java/Spring Boot source code in the repository?</strong></summary>
+
+No. CareerOS is an independent, reusable documentation and ChatGPT prompt workflow. You do not need to build or run the software project to use it.
+
+</details>
+
+---
+
+<a id="contact"></a>
+## 💬 Questions, Feedback or Collaboration?
+
+If you try the workflow, improve the prompts, or have suggestions, feel free to reach out on LinkedIn:
+
+**[Connect with Rishabh Chauhan on LinkedIn](https://www.linkedin.com/in/rishabhchauhan27892)**
 
 ---
 
@@ -645,6 +706,6 @@ Yes. Replace the technical syllabus with role-specific skills, certifications, c
 
 **Less spreadsheet chaos. More evidence. Better career decisions.**
 
-*Created as a reusable, generalized starter kit from an iterative career-tracking workflow developed July–October 2026.*
+*One guide. Two trackers. Eighteen reusable prompts. Your career, your data.*
 
 </div>
