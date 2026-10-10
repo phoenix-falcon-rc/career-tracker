@@ -3,113 +3,208 @@
 
 # 🚀 High-Fit SDE Career Tracker
 
-### Your AI-Powered Software Engineering Job Search Command Center
+### An AI-Powered Job Search, Application Tracking & Interview Preparation System
 
-**Discover better jobs. Track every application. Never miss a recruiter email. Prepare smarter.**
+**One conversation. One application tracker. One intelligent career workflow.**
 
-Built with ChatGPT, Gmail, Google Calendar, Google Sheets, and scheduled AI workflows.
+A practical, reusable guide to building a personalized software engineering career tracker using **ChatGPT, Gmail, Google Calendar, Google Sheets, and AI automation**.
 
-![Status](https://img.shields.io/badge/Status-Ready_to_Setup-brightgreen?style=for-the-badge)
-![Setup](https://img.shields.io/badge/Setup-15_Minutes-blue?style=for-the-badge)
-![Cost](https://img.shields.io/badge/Template-Free-success?style=for-the-badge)
-![Platform](https://img.shields.io/badge/Platform-ChatGPT-purple?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)
+<br>
 
-**[Quick Start](#-quick-start) • [Features](#-features) • [Setup](#-installation--setup) • [Master Prompts](#-master-prompts) • [Daily Usage](#-daily-usage) • [FAQ](#-faq)**
+![Guide](https://img.shields.io/badge/Type-Open_Guide-2563EB?style=for-the-badge)
+![Setup](https://img.shields.io/badge/Initial_Setup-10--15_Minutes-16A34A?style=for-the-badge)
+![AI](https://img.shields.io/badge/Powered_by-ChatGPT-8B5CF6?style=for-the-badge)
+![Audience](https://img.shields.io/badge/Built_for-Software_Engineers-F59E0B?style=for-the-badge)
+
+<br>
+
+**[⚡ Quick Start](#quick-start) · [✨ Features](#features) · [🛠️ Setup Guide](#setup-guide) · [🧠 Matching Engine](#matching-engine) · [🔥 Full Deep Rerun](#full-deep-rerun) · [⏰ Automation](#automation) · [❓ FAQ](#faq)**
+
+<br>
+
+> **Spend less time managing your job search. Spend more time preparing for the opportunities that matter.**
 
 </div>
 
 ---
 
-## 🌟 What Is This?
+<a id="overview"></a>
 
-**High-Fit SDE Career Tracker** is a reusable, AI-assisted job search and career management system.
+## 📖 Overview
 
-Instead of searching job boards, tracking applications in spreadsheets, checking recruiter emails, and manually planning interviews, this system brings those activities into a single workflow.
+Searching for a software engineering job is more than finding open positions.
 
-It uses ChatGPT as the intelligence layer and Google Sheets as the persistent source of truth.
+A serious job search involves:
 
-> [!IMPORTANT]
-> This is a **prompt-driven workflow template**, not a standalone application or software package. It requires ChatGPT with appropriate tool access and user-authorized Google integrations. Some features depend on account permissions and available tools.
+- Discovering relevant opportunities across multiple job boards.
+- Understanding which positions actually match your engineering background.
+- Comparing compensation, career growth, and technical ownership.
+- Tracking dozens or hundreds of applications.
+- Following recruiter conversations across email accounts.
+- Managing interview invitations, assessments, and deadlines.
+- Preparing for coding, system design, and behavioral interviews.
+- Avoiding duplicate applications.
+- Making informed decisions between competing opportunities.
 
-### 🎯 The Problem
+Most people manage these activities using disconnected tools.
 
-Traditional job searches are fragmented.
+**This guide shows you how to connect them into one AI-assisted workflow.**
 
-- 🔍 Job boards show hundreds of irrelevant listings.
-- 📄 Resumes don't capture every transferable engineering skill.
-- 📬 Recruiter emails get buried.
-- 🔁 The same jobs are recommended repeatedly.
-- 📅 Interviews conflict with other commitments.
-- 📊 Application spreadsheets become outdated.
-- 🧠 Interview preparation is disconnected from the actual pipeline.
-- 💰 Jobs are evaluated without considering existing offers.
+The result is a personalized career management system that understands your experience, maintains your application history, researches opportunities, and helps you decide what deserves your attention.
 
-### 💡 The Solution
+### 🎯 Who Is This For?
 
-A persistent AI-powered career tracker that:
+This guide is designed for:
 
-1. Understands your engineering experience.
-2. Finds jobs based on responsibilities, not just titles.
-3. Scores opportunities across multiple dimensions.
-4. Reconciles Gmail and Calendar.
-5. Maintains a single Google Sheets tracker.
-6. Prevents duplicate applications.
-7. Tracks recruiters, interviews, offers, and deadlines.
-8. Creates prioritized daily action plans.
-9. Supports scheduled job-search reports.
-10. Compares new opportunities against your current compensation or offer.
+- Software Development Engineers (SDE I / II / III)
+- Software Engineers (SWE)
+- Backend Engineers
+- Full Stack Engineers
+- Platform Engineers
+- Cloud Engineers
+- Infrastructure Engineers
+- Distributed Systems Engineers
+- Developer Productivity Engineers
+- Engineers exploring adjacent technical roles
+
+It is especially useful for experienced engineers managing multiple applications and interview processes simultaneously.
+
+**You do not need to write code to use this guide.**
 
 ---
+
+<a id="features"></a>
 
 ## ✨ Features
 
-| Feature | Description |
-|---|---|
-| 🧠 Engineering Profile | Understands technical depth, projects, ownership, and transferable skills |
-| 🔎 Intelligent Job Discovery | Searches beyond exact job titles |
-| 📊 Multi-Dimensional Scoring | Evaluates fit, readiness, interview potential, and growth |
-| 📬 Gmail Reconciliation | Finds applications, recruiter replies, assessments, and rejections |
-| 📅 Calendar Intelligence | Tracks interviews, conflicts, and preparation windows |
-| 🗂️ Google Sheets Tracker | Maintains a cumulative application database |
-| 🛡️ Duplicate Protection | Prevents repeated recommendations for applied requisitions |
-| 🔗 Official Job Verification | Checks direct employer or ATS links |
-| 💵 Compensation Benchmarking | Compares jobs against your current situation |
-| 🎯 Interview Preparation | Prioritizes coding, system design, and behavioral preparation |
-| ⏰ Scheduled RERUNs | Supports recurring job-search reports |
-| 📝 Status History | Preserves important application and recruiter events |
+| Capability | What It Does |
+|:---|:---|
+| 🧠 **Candidate Intelligence** | Builds a reusable engineering profile from your resume and experience |
+| 🔍 **Intelligent Job Discovery** | Finds opportunities beyond exact job-title matches |
+| 📊 **Opportunity Scoring** | Evaluates technical fit, readiness, interview potential, and growth |
+| 📬 **Gmail Reconciliation** | Tracks applications, recruiters, assessments, offers, and rejections |
+| 📅 **Calendar Awareness** | Identifies interviews, conflicts, and preparation windows |
+| 🗂️ **Persistent Google Sheets Tracker** | Maintains one cumulative application database |
+| 🛡️ **Duplicate Protection** | Avoids recommending already-applied requisitions |
+| 🔗 **Job Verification** | Checks official employer and ATS application pages |
+| 💰 **Compensation Benchmarking** | Compares opportunities against your current situation |
+| 🎯 **Interview Preparation** | Prioritizes coding, system design, and technical preparation |
+| ⏰ **Scheduled Automation** | Supports recurring application and job-market updates |
+| 📜 **Historical Tracking** | Preserves application status changes and evidence |
+
+### What Makes It Different?
+
+This is not simply a prompt that asks ChatGPT to find jobs.
+
+It is a **repeatable operating methodology** that combines:
+
+1. Personal career context.
+2. Historical application records.
+3. Email and calendar reconciliation.
+4. Broad job-market discovery.
+5. Technical and career-fit analysis.
+6. Official job verification.
+7. Persistent tracking.
+8. Interview preparation.
+9. Action-oriented reporting.
 
 ---
 
-## ⚡ Quick Start
+<a id="architecture"></a>
 
-**Estimated hands-on setup: 10–15 minutes**
-
-Full historical reconciliation and market research may take additional processing time.
-
-### Prerequisites
-
-- [ ] ChatGPT account with access to the necessary features
-- [ ] Current resume (PDF or DOCX)
-- [ ] Google account
-- [ ] Gmail connection
-- [ ] Google Calendar connection
-- [ ] Google Drive connection
-- [ ] Basic career preferences
-
-### Setup Overview
+## 🏗️ System Architecture
 
 ```mermaid
 flowchart TD
-    A["🚀 Start ChatGPT"] --> B["🔌 Connect Google Apps"]
-    B --> C["📄 Upload Resume"]
-    C --> D["🧠 Build Candidate Profile"]
-    D --> E["📊 Create Google Sheets Tracker"]
-    E --> F["⚙️ Configure Matching Engine"]
-    F --> G["📬 Reconcile Existing Applications"]
-    G --> H["🔍 Run FULL DEEP RERUN"]
-    H --> I["⏰ Configure Daily Automation"]
-    I --> J["✅ Validate System"]
+    USER["👨‍💻 Software Engineer"]
+    AI["🧠 ChatGPT Career Tracker"]
+
+    USER --> AI
+
+    RESUME["📄 Resume & Preferences"] --> AI
+    GMAIL["📬 Gmail"] <--> AI
+    CAL["📅 Google Calendar"] <--> AI
+    WEB["🌐 Job Market Research"] --> AI
+
+    AI <--> SHEETS["📊 Google Sheets Master Tracker"]
+
+    AI --> MATCH["🎯 Job Matching"]
+    AI --> PREP["💻 Interview Preparation"]
+    AI --> REPORT["📋 Actionable Reports"]
+
+    AUTO["⏰ Scheduled Automation"] --> AI
+
+    style AI fill:#2563eb,color:#ffffff,stroke:#1d4ed8
+    style SHEETS fill:#16a34a,color:#ffffff,stroke:#15803d
+    style REPORT fill:#7c3aed,color:#ffffff,stroke:#6d28d9
+```
+
+### Technology Stack
+
+| Component | Technology | Responsibility |
+|---|---|---|
+| Intelligence | ChatGPT | Reasoning, matching, prioritization |
+| Communication | Gmail | Application and recruiter reconciliation |
+| Scheduling | Google Calendar | Interview and availability management |
+| Persistent Storage | Google Sheets | Application tracking and historical records |
+| Market Research | Web search | Opportunity discovery and verification |
+| Automation | ChatGPT Tasks | Scheduled execution and reporting |
+
+> [!IMPORTANT]
+> This is a **prompt-based workflow**, not a standalone software application.
+>
+> It depends on the tools and permissions available to your ChatGPT account. Connected integrations must be authorized by the user. Some operations, especially scheduled access to connected apps and spreadsheet editing, may vary by plan or environment.
+
+---
+
+<a id="quick-start"></a>
+
+## ⚡ Quick Start
+
+### ⏱️ How Long Does Setup Take?
+
+| Activity | Estimated Hands-On Time |
+|---|---:|
+| Connect Google integrations | 2–3 minutes |
+| Create the tracker conversation | 1 minute |
+| Upload resume and enter preferences | 2–3 minutes |
+| Initialize Google Sheets | 2–3 minutes |
+| Configure matching and rerun methodology | 2–3 minutes |
+| Request the first run and automation | 1–2 minutes |
+| **Total Initial Configuration** | **~10–15 minutes** |
+
+**Important:** These estimates describe your hands-on setup time, not the time needed for ChatGPT to complete every operation.
+
+The first historical Gmail reconciliation, spreadsheet population, broad job-market search, and acceptance test may take additional time.
+
+You can start using the tracker before every optional feature is configured.
+
+### Prerequisites
+
+- [ ] ChatGPT account with access to relevant tools
+- [ ] Updated resume (PDF or DOCX)
+- [ ] Google account
+- [ ] Gmail integration, if email reconciliation is desired
+- [ ] Google Calendar integration, if scheduling intelligence is desired
+- [ ] Google Drive integration with spreadsheet access
+- [ ] Basic information about your target jobs and compensation
+
+### 🚀 The Setup Sequence
+
+```mermaid
+flowchart TD
+    A["1. Connect Integrations"]
+    B["2. Create Tracker Conversation"]
+    C["3. Upload Resume"]
+    D["4. Build Candidate Profile"]
+    E["5. Create Google Sheet"]
+    F["6. Configure Matching Engine"]
+    G["7. Import Application History"]
+    H["8. Run FULL DEEP RERUN"]
+    I["9. Schedule Automation"]
+    J["10. Validate"]
+
+    A --> B --> C --> D --> E --> F --> G --> H --> I --> J
 
     style A fill:#2563eb,color:#fff
     style J fill:#16a34a,color:#fff
@@ -117,105 +212,152 @@ flowchart TD
 
 ---
 
-# 🛠️ Installation & Setup
+<a id="setup-guide"></a>
 
-## Step 1 — Connect Your Apps
+# 🛠️ Complete Setup Guide
 
-In ChatGPT, open **Settings → Plugins**, or access Plugins from the chat sidebar.
+Every step includes a ready-to-copy ChatGPT prompt.
 
-Connect:
+**Follow the steps in order.**
 
-| Integration | Purpose | Required? |
-|---|---|---|
-| Gmail | Application and recruiter email reconciliation | Recommended |
-| Google Calendar | Interview scheduling and conflict detection | Recommended |
-| Google Drive | Google Sheets creation and updates | Required for persistent tracker |
+You can use the same ChatGPT conversation throughout the setup.
 
-> [!TIP]
-> If you use multiple Gmail accounts for applications, connect each one you want included in reconciliation.
+---
+
+<a id="step-1"></a>
+
+## Step 1 — Connect Your Google Integrations
+
+Open ChatGPT and navigate to **Settings → Plugins**, or access Plugins through the chat sidebar.
+
+Look for:
+
+| Integration | Why You Need It |
+|---|---|
+| **Gmail** | Reads application confirmations, recruiter correspondence, and interview updates |
+| **Google Calendar** | Reads upcoming interviews, availability, and conflicts |
+| **Google Drive** | Creates and updates the Google Sheets tracker |
+
+Google Sheets functionality is provided through the Google Drive integration where supported.
+
+### Recommended Configuration
+
+Connect every Gmail account you actively use for job applications.
+
+For example:
+
+```text
+Personal Gmail
+Professional Gmail
+Secondary Job-Search Gmail
+```
+
+The tracker should search all authorized accounts rather than assuming every application belongs to one inbox.
+
+> [!NOTE]
+> If you cannot connect Gmail or Calendar, you can still use the job discovery and application tracking portions of this system.
+>
+> Those capabilities should be marked as unavailable rather than pretending that reconciliation occurred.
 
 ### 📋 Prompt 1 — Verify Connections
 
-Copy this into ChatGPT:
-
 <details>
-<summary><b>📋 Click to expand — Connection Verification Prompt</b></summary>
+<summary><strong>📋 Click to expand and copy Prompt 1</strong></summary>
 
 ```text
 I am setting up my High-Fit SDE Career Tracker.
 
-Please check which integrations are connected and usable:
+Verify which of the following integrations are connected
+and operational:
 
-1. Gmail:
-   - Identify connected accounts.
+1. Gmail
+   - Identify authorized connected accounts.
    - Verify read access.
 
-2. Google Calendar:
+2. Google Calendar
    - Verify access to upcoming events.
 
-3. Google Drive / Google Sheets:
-   - Verify spreadsheet creation, reading, and editing capabilities.
+3. Google Drive / Google Sheets
+   - Verify spreadsheet creation capabilities.
+   - Verify spreadsheet reading capabilities.
+   - Verify spreadsheet editing capabilities.
 
-Do not send emails or modify existing files during this test.
+Do not send emails, create events, or modify existing
+files during this verification.
 
 Report:
+
 - Connected integrations
 - Successfully tested capabilities
 - Missing permissions
-- Features that are unavailable
+- Unsupported operations
+- Required next steps
 
-Never claim an integration works unless you actually tested it.
+Do not claim an integration is operational unless
+you actually verified its functionality.
 ```
 
 </details>
 
+**Expected result:** ChatGPT tells you which integrations are working and whether additional authorization is required.
+
 ---
 
-## Step 2 — Create Your Tracker Conversation
+<a id="step-2"></a>
 
-Create a new ChatGPT conversation named:
+## Step 2 — Create Your Career Tracker Conversation
+
+Create a new ChatGPT conversation.
+
+Suggested name:
 
 **High-Fit SDE Career Tracker**
 
-Use this conversation as your primary career management workspace.
+This conversation becomes your primary career-management workspace.
 
-### 📋 Prompt 2 — Initialize the Career Agent
+You can use separate conversations for coding practice or system design, but your application database should remain centralized.
+
+### 📋 Prompt 2 — Initialize the Career Tracker
 
 <details>
-<summary><b>📋 Click to expand — Career Agent Initialization</b></summary>
+<summary><strong>📋 Click to expand and copy Prompt 2</strong></summary>
 
 ```text
-You are my High-Fit SDE Career Search and Application
-Tracking Assistant.
+You are my High-Fit SDE Career Search and
+Application Tracking Assistant.
 
-You are responsible for managing my ongoing software
-engineering job search.
+This is an ongoing career management system,
+not a one-time job search.
 
-Your responsibilities:
+YOUR RESPONSIBILITIES:
 
-1. Understand my engineering experience and career goals.
-2. Discover relevant jobs based on actual responsibilities.
-3. Compare jobs against my current skills and compensation.
-4. Track every application and recruiter interaction.
-5. Reconcile Gmail and Google Calendar.
-6. Maintain one persistent Google Sheets tracker.
-7. Prevent duplicate job recommendations.
-8. Verify live job postings.
-9. Track interviews, assessments, deadlines, and offers.
-10. Build interview preparation plans.
-11. Preserve historical information.
-12. Publish actionable job-search reports.
+1. Understand my actual engineering experience.
+2. Discover relevant software engineering opportunities.
+3. Evaluate jobs based on responsibilities and technical fit.
+4. Compare compensation, career growth, and flexibility.
+5. Track applications and recruiter interactions.
+6. Reconcile Gmail and Google Calendar.
+7. Maintain one persistent Google Sheets tracker.
+8. Avoid duplicate application recommendations.
+9. Verify job openings on official sources.
+10. Track interviews, assessments, and deadlines.
+11. Recommend interview preparation priorities.
+12. Preserve application history.
+13. Produce actionable career reports.
 
 OPERATING RULES:
 
-- This is an ongoing career management system.
-- Use this conversation as the primary reporting workspace.
-- Never create duplicate spreadsheets.
-- Never invent application statuses.
-- Never claim an email was checked without checking it.
-- Never recommend an already-applied exact requisition as NEW.
-- Preserve historical decisions and evidence.
-- Clearly distinguish verified facts from estimates.
+- Treat my confirmed resume and experience as primary evidence.
+- Do not invent technical skills or employment history.
+- Use one persistent Google Sheets tracker.
+- Do not create replacement trackers without permission.
+- Reconcile existing records before declaring jobs NEW.
+- Preserve rejected and closed application history.
+- Distinguish verified facts from assumptions.
+- Report integration or tool failures clearly.
+- Prioritize actions that materially improve my job search.
+
+Use this conversation as the primary reporting workspace.
 
 Start by helping me build my canonical engineering profile.
 
@@ -226,181 +368,201 @@ Ask only the essential questions needed.
 
 ---
 
-## Step 3 — Build Your Engineering Profile
+<a id="step-3"></a>
 
-Upload your latest resume into the tracker conversation.
+## Step 3 — Build Your Canonical Engineering Profile
 
-The AI must understand your **actual engineering capabilities**, not merely extract resume keywords.
+Upload your latest resume.
 
-### Information to Capture
+A strong matching system must understand **what you actually built and owned**, not merely which technologies appear in your resume.
 
-| Category | Examples |
-|---|---|
-| Languages | Java, Python, Go, C++, TypeScript |
-| Engineering Focus | Backend, Full Stack, Platform, Infrastructure |
-| Frameworks | Spring Boot, React, Node.js, Django |
-| Cloud | AWS, Azure, GCP |
-| Distributed Systems | Kafka, SQS, SNS, Redis, microservices |
-| Databases | PostgreSQL, DynamoDB, MongoDB |
-| Engineering Practices | CI/CD, Docker, Kubernetes, testing |
-| Ownership | System design, production support, architecture |
-| Leadership | Mentoring, code reviews, technical direction |
-| Career Goals | Senior SDE, Staff Engineer, Engineering Lead |
+### Example: Why This Matters
 
-### 📋 Prompt 3 — Canonical Candidate Profile
+Consider an engineer who has:
+
+- Built Java backend services.
+- Designed REST APIs.
+- Worked with AWS Lambda.
+- Implemented asynchronous workflows.
+- Used SQS, SNS, or Kafka.
+- Built CI/CD pipelines.
+- Debugged production systems.
+- Mentored other engineers.
+
+A basic keyword search might only recommend Java Developer positions.
+
+A responsibility-first matching engine may also identify:
+
+- Backend Platform Engineer
+- Distributed Systems Engineer
+- Cloud Software Engineer
+- API Infrastructure Engineer
+- Developer Productivity Engineer
+- Reliability-focused Software Engineer
+
+### 📋 Prompt 3 — Build Candidate Profile
 
 <details>
-<summary><b>📋 Click to expand — Candidate Profile Builder</b></summary>
+<summary><strong>📋 Click to expand and copy Prompt 3</strong></summary>
 
 ```text
 Analyze my uploaded resume and build my canonical
 Software Development Engineer candidate profile.
 
-Do not merely summarize my resume.
+Do not simply summarize my resume.
 
-Extract:
+EXTRACT:
 
 1. Total professional engineering experience.
-2. Programming languages and actual proficiency.
-3. Backend, frontend, platform, and infrastructure experience.
-4. Cloud and distributed systems experience.
-5. System design and architecture ownership.
-6. Production debugging and reliability experience.
-7. Projects and systems built from scratch.
-8. Technical leadership and mentorship.
-9. Measurable engineering impact.
-10. Strongest technical interview stories.
-11. Transferable skills.
-12. Trainable gaps.
-13. Hard blockers.
+2. Programming languages and depth of proficiency.
+3. Backend, frontend, and full-stack experience.
+4. Cloud and infrastructure experience.
+5. Distributed systems and messaging experience.
+6. Databases and data modeling experience.
+7. System design and architecture ownership.
+8. Production debugging and reliability experience.
+9. Projects or systems built from scratch.
+10. CI/CD and developer tooling experience.
+11. Technical leadership and mentorship.
+12. Measurable engineering impact.
+13. Strongest technical interview stories.
+14. Transferable skills.
+15. Trainable technical gaps.
+16. Hard blockers requiring substantial retraining.
 
-Ask targeted questions about missing information.
+Ask targeted follow-up questions about missing information.
 
-Build:
+THEN BUILD:
 
-A. Canonical engineering profile
-B. Target engineering levels
-C. Eligible job families
-D. Strongest resume positioning
-E. Technical strengths
-F. Technical gaps
-G. Realistic career growth opportunities
+A. Canonical Engineering Profile
+B. Target Engineering Levels
+C. Eligible Job Families
+D. Strongest Resume Positioning
+E. Core Technical Strengths
+F. Realistic Technical Weaknesses
+G. Career Growth Opportunities
+H. Reusable Job-Matching Profile
 
-Use my resume and confirmed answers as evidence.
+Use only evidence from my resume and confirmed answers.
 
-Do not invent experience.
+Do not inflate proficiency or invent experience.
 
-Keep this profile updated throughout my job search.
+Maintain this profile as new information becomes available.
 ```
 
 </details>
 
-### 📋 Prompt 3B — Career Preferences
+### 📋 Prompt 3B — Configure Career Preferences
 
 <details>
-<summary><b>📋 Click to expand — Career Preferences</b></summary>
+<summary><strong>📋 Click to expand and copy Prompt 3B</strong></summary>
 
 ```text
-Add these preferences to my candidate profile.
+Add these preferences to my canonical career profile.
 
-Current Location:
-[YOUR CITY / COUNTRY]
+CURRENT LOCATION:
+[YOUR CITY AND COUNTRY]
 
-Target Locations:
-[REMOTE / LOCAL / RELOCATION REGIONS]
+TARGET LOCATIONS:
+[LOCAL / REMOTE / RELOCATION REGIONS]
 
-Work Authorization:
+WORK AUTHORIZATION:
 [COUNTRIES WHERE YOU CAN LEGALLY WORK]
 
-Preferred Arrangement:
+PREFERRED ARRANGEMENT:
 [REMOTE / HYBRID / ONSITE / FLEXIBLE]
 
-Current Compensation:
-[AMOUNT + CURRENCY, OPTIONAL]
+CURRENT COMPENSATION:
+[AMOUNT + CURRENCY / OPTIONAL]
 
-Current Offer Benchmark:
-[AMOUNT + CURRENCY, IF APPLICABLE]
+CURRENT OFFER BENCHMARK:
+[AMOUNT + CURRENCY / IF APPLICABLE]
 
-Target Compensation:
+TARGET COMPENSATION:
 [AMOUNT + CURRENCY]
 
-Target Level:
+TARGET ENGINEERING LEVEL:
 [SDE II / SENIOR / STAFF / OTHER]
 
-Preferred Engineering Domains:
+PREFERRED ENGINEERING DOMAINS:
 [BACKEND / CLOUD / PLATFORM / FULL STACK / ETC.]
 
-Relocation Willingness:
+RELOCATION WILLINGNESS:
 [YES / NO / CONDITIONAL]
 
-Travel Willingness:
+TRAVEL WILLINGNESS:
 [YES / NO / CONDITIONAL]
 
-Hard Constraints:
-[LIST]
+HARD CONSTRAINTS:
+[LIST ANY NON-NEGOTIABLE REQUIREMENTS]
 
-Career Priorities:
-[COMPENSATION / GROWTH / FLEXIBILITY / OWNERSHIP / ETC.]
+CAREER PRIORITIES:
+[COMPENSATION / GROWTH / OWNERSHIP / FLEXIBILITY / ETC.]
 
-Do not assume that remote work always outweighs compensation,
-or that a demanding role is undesirable.
+INTERVIEW PREPARATION AVAILABILITY:
+[HOURS PER WEEK / OPTIONAL]
 
-Use my actual stated preferences.
+Use these preferences for future searches and recommendations.
 
-Compare future jobs against these preferences.
+Do not assume demanding roles are undesirable.
+
+Do not assume remote flexibility is always more important
+than compensation.
+
+Ask for clarification when an important preference is missing.
 ```
 
 </details>
 
 ---
 
-## Step 4 — Create Your Google Sheets Tracker
+<a id="step-4"></a>
 
-The tracker uses **one persistent spreadsheet** with six tabs.
+## Step 4 — Create Your Google Sheets Application Tracker
 
-### 📊 Spreadsheet Architecture
+The system uses **one authoritative Google Sheets spreadsheet**.
+
+This is important because ChatGPT conversations and automation runs should not become competing databases.
+
+### Recommended Workbook Structure
 
 ```mermaid
 flowchart TD
-    A["📊 Job Application Master Tracker"]
+    ROOT["📊 Job Application Master Tracker"]
 
-    A --> B["Dashboard"]
-    A --> C["Applications Master"]
-    A --> D["Active Pipeline"]
-    A --> E["Watchlist"]
-    A --> F["Status History"]
-    A --> G["How to Update"]
+    ROOT --> A["📈 Dashboard"]
+    ROOT --> B["🗂️ Applications Master"]
+    ROOT --> C["📅 Active Pipeline"]
+    ROOT --> D["🔍 Watchlist"]
+    ROOT --> E["📜 Status History"]
+    ROOT --> F["📖 How to Update"]
 
-    C --> H["All applications"]
-    D --> I["Interviews and actions"]
-    E --> J["Unapplied opportunities"]
-    F --> K["Historical changes"]
+    style ROOT fill:#16a34a,color:#fff
 ```
 
-### Sheet Structure
-
-| Tab | Purpose |
+| Sheet | Purpose |
 |---|---|
-| Dashboard | Job-search overview and key metrics |
-| Applications Master | Permanent application database |
-| Active Pipeline | Interviews, assessments, and next actions |
-| Watchlist | Promising jobs not yet applied to |
-| Status History | Historical audit trail |
-| How to Update | Methodology and field definitions |
+| **Dashboard** | Overview of applications, interviews, offers, and action items |
+| **Applications Master** | Permanent database of all submitted applications |
+| **Active Pipeline** | Current interviews, assessments, and recruiter actions |
+| **Watchlist** | Promising roles that have not yet been applied to |
+| **Status History** | Historical record of important changes |
+| **How to Update** | Field definitions, scoring rules, and maintenance methodology |
 
-### 📋 Prompt 4 — Create Google Sheets Tracker
+### 📋 Prompt 4 — Create the Tracker
 
 <details>
-<summary><b>📋 Click to expand — Google Sheets Setup Prompt</b></summary>
+<summary><strong>📋 Click to expand and copy Prompt 4</strong></summary>
 
 ```text
 Create a native Google Sheets spreadsheet named:
 
 High-Fit SDE Job Application Master Tracker
 
-This must be my single persistent job-search database.
+This spreadsheet must be my single persistent
+career tracking database.
 
-Create six tabs:
+CREATE SIX TABS:
 
 1. Dashboard
 2. Applications Master
@@ -477,7 +639,7 @@ Due Date
 
 ACTIVE PIPELINE:
 
-Create an action-focused view of:
+Create an action-focused view containing:
 - Interviews
 - Assessments
 - Recruiter follow-ups
@@ -502,85 +664,87 @@ FORMATTING:
 - Enable filters.
 - Wrap long text.
 - Use readable column widths.
-- Highlight urgent deadlines.
-- Distinguish application statuses.
-- Preserve historical records.
-- Use formulas where appropriate.
+- Highlight urgent actions.
+- Distinguish statuses visually.
+- Preserve historical information.
+- Use formulas or derived views where supported.
 
 HOW TO UPDATE:
 
 Document:
 - Field definitions
 - Status conventions
-- Scoring rules
+- Scoring methodology
 - Deduplication rules
-- Verification methodology
+- Posting verification methodology
 - Evidence standards
 
-After creation:
+AFTER CREATION:
 
-1. Return the spreadsheet URL.
-2. Return its spreadsheet ID.
-3. Verify the six tabs exist.
-4. Save this exact spreadsheet as the authoritative tracker.
+1. Return the actual spreadsheet URL.
+2. Return the spreadsheet ID.
+3. Verify all six tabs exist.
+4. Treat this spreadsheet as authoritative.
 
-Never create a replacement spreadsheet unless explicitly requested.
+Never create a replacement spreadsheet without my permission.
 
-Do not claim successful creation without verifying it.
+If creation or editing fails, report the failure clearly.
+
+Do not claim a successful update without read-back verification.
 ```
 
 </details>
 
-> [!WARNING]
-> If you already maintain an application spreadsheet, ask ChatGPT to inspect and improve that file instead of creating a replacement.
+### Existing Spreadsheet?
+
+If you already have a spreadsheet, use this instead:
+
+```text
+I already have an application tracker.
+
+Inspect the existing Google Sheet and adapt it to the
+High-Fit SDE methodology.
+
+Preserve existing applications, formulas, formatting,
+tabs, and historical records.
+
+Do not create a replacement spreadsheet.
+
+Ask before making destructive structural changes.
+```
 
 ---
 
-# 🧠 The Matching Engine
+<a id="matching-engine"></a>
 
-## Responsibility-First Matching
+# 🧠 The High-Fit Matching Engine
 
-Traditional keyword matching is too restrictive.
+This is the intelligence layer of the system.
 
-A backend engineer with Java, REST APIs, AWS, and distributed systems experience may qualify for roles titled:
+Instead of asking:
 
-- Backend Software Engineer
-- Platform Engineer
-- Cloud Software Engineer
-- Distributed Systems Engineer
-- Infrastructure Software Engineer
-- Developer Productivity Engineer
-- API Integration Engineer
-- Reliability Engineer
-- Software Development Engineer
+> Does the job description contain the same keywords as my resume?
 
-The tracker should recognize transferable engineering skills.
+The tracker asks:
 
-### Example
-
-| Requirement | Candidate Experience | Classification |
-|---|---|---|
-| Java microservices | Java backend development | Strong Match |
-| AWS Lambda | Production serverless development | Strong Match |
-| Kafka | SQS/SNS asynchronous messaging | Transferable |
-| Go | Strong Java/Python foundation | Trainable Gap |
-| Kubernetes | Docker and cloud deployment experience | Partial Match |
-| Linux kernel development | No systems programming background | Potential Hard Blocker |
+> Can this engineer realistically perform the responsibilities of this role, succeed in its interview process, and benefit from the opportunity?
 
 ---
 
-## 📈 Opportunity Scoring
+<a id="scoring"></a>
 
-Every opportunity receives four separate scores.
+## 📊 Multi-Dimensional Opportunity Scoring
 
-| Dimension | Weight | What It Measures |
+Each opportunity is evaluated across four separate dimensions.
+
+| Dimension | Suggested Weight | Meaning |
 |---|---:|---|
-| Resume Fit | 35% | Technical and responsibility overlap |
-| Interview Readiness | 25% | Ability to interview successfully now |
-| Low-Hanging Potential | 20% | Realistic likelihood of reaching interviews |
-| Career Growth | 20% | Technical ownership and long-term progression |
+| **Resume Fit** | 35% | How well your actual experience matches the job |
+| **Interview Readiness** | 25% | How prepared you are for the expected interviews |
+| **Low-Hanging Potential** | 20% | How realistically you could reach the interview stage |
+| **Career Growth** | 20% | Ownership, technical depth, leadership, and future upside |
 
-### Weighted Score
+### Suggested Formula
 
 ```text
 Overall Score =
@@ -590,31 +754,49 @@ Overall Score =
   + (Career Growth × 0.20)
 ```
 
-Example:
+### Example
 
-```text
-Resume Fit:          9/10
-Interview Readiness: 7/10
-Low-Hanging:         8/10
-Career Growth:       9/10
-
-Overall Score:       8.3/10
-```
+| Dimension | Score |
+|---|---:|
+| Resume Fit | 9/10 |
+| Interview Readiness | 7/10 |
+| Low-Hanging Potential | 8/10 |
+| Career Growth | 9/10 |
+| **Overall Score** | **8.3/10** |
 
 > [!NOTE]
-> This is a suggested scoring model, not a statistically validated hiring prediction. Compensation, eligibility, posting status, and hard blockers should remain separate decision factors.
+> These scores are structured estimates, not statistically validated probabilities.
+>
+> Compensation, work authorization, location eligibility, and hard technical blockers remain separate decision factors.
 
-### 📋 Prompt 5 — Configure Matching Rules
+### Hard Blockers vs. Trainable Gaps
+
+| Requirement | Candidate Background | Assessment |
+|---|---|---|
+| Java backend development | Production Java services | Strong Match |
+| REST API development | Designed and maintained APIs | Strong Match |
+| AWS | Production AWS experience | Strong Match |
+| Kafka | Experience with SQS/SNS | Transferable Skill |
+| Go | Strong Java/Python foundation | Trainable Gap |
+| Kubernetes | Docker and cloud experience | Partial Match |
+| Linux kernel engineering | No low-level systems experience | Potential Hard Blocker |
+
+The objective is to avoid both extremes:
+
+- Rejecting good jobs because of one unfamiliar framework.
+- Recommending unrealistic jobs requiring months of unrelated retraining.
+
+### 📋 Prompt 5 — Configure the Matching Engine
 
 <details>
-<summary><b>📋 Click to expand — Matching Engine Prompt</b></summary>
+<summary><strong>📋 Click to expand and copy Prompt 5</strong></summary>
 
 ```text
 Configure my High-Fit SDE Matching Engine.
 
-SEARCH RESPONSIBILITY-FIRST.
+SEARCH RESPONSIBILITY-FIRST, NOT TITLE-ONLY.
 
-Eligible job families include:
+ELIGIBLE JOB FAMILIES:
 
 - Software Development Engineer
 - Software Engineer
@@ -626,12 +808,13 @@ Eligible job families include:
 - Infrastructure Software Engineer
 - API / Integration Engineer
 - Developer Productivity Engineer
-- Reliability Engineer
+- Reliability-focused Software Engineer
 - Adjacent engineering roles with transferable responsibilities
 
-Do not limit searches to exact job titles.
+Do not exclude unusually titled jobs when their
+actual responsibilities match my experience.
 
-EVALUATE:
+SCORING:
 
 1. Resume Fit /10
 2. Interview Readiness /10
@@ -639,108 +822,138 @@ EVALUATE:
 4. Career Growth /10
 5. Compensation
 6. Preparation Required
-7. Hard Blockers
-8. Trainable Gaps
 
-SCORING WEIGHTS:
+SUGGESTED WEIGHTS:
 
 Resume Fit: 35%
 Interview Readiness: 25%
 Low-Hanging Potential: 20%
 Career Growth: 20%
 
-MATCHING RULES:
+MATCHING PRINCIPLES:
 
-- Prioritize real engineering experience.
+- Weight hands-on engineering experience heavily.
 - Recognize transferable skills.
-- Do not reject a role solely because one framework differs.
-- Distinguish hard blockers from trainable gaps.
-- Consider architecture and production ownership.
-- Consider technical leadership and mentorship.
+- Separate hard blockers from trainable gaps.
+- Consider system design and production ownership.
+- Consider architecture and technical leadership.
+- Consider mentorship and collaboration.
 - Consider remote flexibility.
 - Consider relocation and travel preferences.
-- Do not exclude demanding roles automatically.
-- Compare against my current offer or compensation benchmark.
+- Do not automatically reject demanding roles.
+- Compare opportunities against my current benchmark.
 
 DEDUPLICATION:
 
-Check Applications Master and Watchlist before recommending jobs.
+Read Applications Master and Watchlist before
+calling any opportunity NEW.
 
 Use:
 - Company
 - Requisition ID
 - Official job URL
-- Role and location as supporting evidence
+- Title and location as supporting evidence
 
-Different requisitions at the same company remain distinct.
+Different requisitions at the same employer remain distinct.
 
-Never recommend an already-applied exact requisition as NEW.
+The same end client is not automatically a duplicate.
 
 Preserve applied, rejected, closed, and expired history.
 
+Never recommend an already-applied exact requisition as NEW.
+
 VERIFICATION:
 
-Prefer official employer or ATS postings.
+Prefer official employer and ATS postings.
 
 Record:
 - Direct application URL
+- Requisition ID
 - Verification date
 - Posting status
 - Location
+- Work arrangement
 - Remote eligibility
-- Compensation
-- Travel
-- Application deadline
+- Compensation and currency
+- Travel requirements
+- Application deadline when published
 
 Never invent missing information.
 
-Apply these rules to all future job searches.
+Apply these rules to all future searches and RERUNs.
 ```
 
 </details>
 
 ---
 
-# 📬 Gmail & Calendar Intelligence
+<a id="gmail-reconciliation"></a>
 
-The tracker should reconcile communication **before** discovering new jobs.
+# 📬 Gmail & Calendar Reconciliation
 
-## What It Looks For
+One of the most important improvements to the system is the order of operations.
 
-| Signal | Example | Action |
-|---|---|---|
-| Application Received | Greenhouse acknowledgment | Mark Applied |
-| Recruiter Outreach | Screening invitation | Add next action |
-| Assessment | HackerRank invitation | Track deadline |
-| Interview Confirmation | Calendar invitation | Update pipeline |
-| Rejection | ATS notification | Mark Rejected |
-| Offer | Employment offer | Track offer |
-| Candidate Reply | Sent email | Clear completed action |
-| Scheduling Conflict | Two overlapping interviews | Flag conflict |
+**Reconcile existing activity before searching for new opportunities.**
 
-### Gmail Reconciliation Flow
+Otherwise, the system may:
+
+- Recommend jobs you already applied for.
+- Miss recruiter responses.
+- Treat a completed follow-up as outstanding.
+- Miss assessment deadlines.
+- Confuse calendar preparation blocks with confirmed interviews.
+- Lose track of separate requisitions.
+
+### Reconciliation Workflow
 
 ```mermaid
 flowchart TD
-    A["📬 Connected Gmail Accounts"] --> B["Search Relevant Messages"]
-    B --> C["Read Email Threads"]
-    C --> D{"Already Replied?"}
+    A["📬 Connected Gmail Accounts"]
+    B["🔎 Search Relevant Messages"]
+    C["📖 Read Complete Threads"]
+    D{"Already Replied?"}
+    E["✅ Mark Response Complete"]
+    F["📌 Create Follow-up Action"]
+    G["📊 Reconcile Google Sheets"]
+    H["📅 Check Calendar"]
+    I["📋 Report Actions"]
 
-    D -->|Yes| E["Mark Response Complete"]
-    D -->|No| F["Create Follow-up Action"]
-
-    E --> G["Reconcile Google Sheets"]
+    A --> B --> C --> D
+    D -->|Yes| E
+    D -->|No| F
+    E --> G
     F --> G
-
-    G --> H["Update Status History"]
-    H --> I["Check Google Calendar"]
-    I --> J["Publish Action Summary"]
+    G --> H --> I
 ```
 
-## 📋 Prompt 6 — Initial Historical Reconciliation
+### What the System Tracks
+
+| Email Signal | Tracker Action |
+|---|---|
+| Application confirmation | Mark application as submitted |
+| Recruiter screening request | Create next action |
+| Assessment invitation | Track assessment deadline |
+| Interview confirmation | Update Active Pipeline |
+| Interview rescheduling | Update date and history |
+| Candidate reply in Sent | Mark response completed |
+| Rejection email | Mark rejected |
+| Offer communication | Update offer stage |
+| No response after follow-up | Preserve waiting status |
+
+---
+
+<a id="historical-import"></a>
+
+## Step 5 — Import Your Existing Job-Search History
+
+For someone who has already been applying, this is essential.
+
+A historical import prevents the tracker from starting with an incomplete understanding of the application pipeline.
+
+### 📋 Prompt 6 — Historical Reconciliation
 
 <details>
-<summary><b>📋 Click to expand — Gmail Import Prompt</b></summary>
+<summary><strong>📋 Click to expand and copy Prompt 6</strong></summary>
 
 ```text
 Perform INITIAL HISTORICAL RECONCILIATION
@@ -749,7 +962,7 @@ for my High-Fit SDE Tracker.
 Use every connected Gmail account I have authorized.
 
 For the first scan, cover the past 90 days,
-or the full duration of my current job search if shorter.
+or my full current job-search period if shorter.
 
 SEARCH:
 
@@ -770,86 +983,106 @@ Exclude spam and trash.
 
 Ignore unrelated marketing.
 
-Read plausible email bodies and complete threads.
+Read plausible message bodies and complete threads.
 
-For each application:
+FOR EACH APPLICATION:
 
 1. Determine whether I actually applied.
-2. Identify the company and requisition.
-3. Determine the latest verified status.
+2. Identify company and requisition.
+3. Determine latest verified status.
 4. Check whether I already replied.
-5. Identify pending actions.
+5. Identify outstanding actions.
 6. Extract deadlines.
 7. Extract recruiter information.
-8. Identify interviews.
+8. Identify interview dates.
 9. Preserve distinct requisitions.
 10. Flag uncertain information.
 
 Cross-check Google Calendar.
 
-Reconcile all findings with my existing tracker.
+Reconcile all findings with Applications Master.
 
-Update:
+UPDATE:
+
 - Applications Master
 - Active Pipeline
 - Status History
 
 Do not delete historical records.
 
-Return:
-- Applications recovered
-- Interviews
-- Assessments
-- Recruiter actions
-- Applied — Waiting
-- Rejections
-- Items needing confirmation
+RETURN:
 
-Verify successful spreadsheet updates.
+1. Applications recovered
+2. Active interviews
+3. Assessments
+4. Recruiter responses required
+5. Applied — Waiting
+6. Rejected / Closed
+7. Items requiring confirmation
 
-Never claim a complete reconciliation if Gmail
-or Calendar access was unavailable.
+Verify successful spreadsheet writes.
+
+Do not claim complete reconciliation if
+Gmail or Calendar access was unavailable.
 ```
 
 </details>
 
+> [!TIP]
+> If you're beginning a job search from scratch, you can skip the historical import and start with an empty tracker.
+
 ---
+
+<a id="full-deep-rerun"></a>
 
 # 🔥 FULL DEEP RERUN
 
-The core command:
+The central workflow of the High-Fit SDE Career Tracker.
+
+Once configured, you can simply type:
 
 ```text
 FULL DEEP RERUN
 ```
 
-This initiates the complete career-tracker workflow.
+The assistant should execute the full methodology defined below.
 
-## The 10-Phase Methodology
+### What Makes This Different from a Regular Job Search?
+
+A regular search asks:
+
+> Find me Senior Software Engineer jobs.
+
+A FULL DEEP RERUN asks:
+
+> Reconcile everything that has changed, understand my active opportunities, discover realistic new positions, verify them, update my application history, and tell me what I should do next.
+
+### The 10-Phase Methodology
 
 | Phase | Operation |
 |---|---|
-| 1 | Reconcile candidate profile and career context |
-| 2 | Search Gmail and recruiter conversations |
-| 3 | Reconcile Google Calendar |
-| 4 | Read the existing application tracker |
-| 5 | Discover a broad pool of relevant jobs |
-| 6 | Score and evaluate opportunities |
-| 7 | Verify official postings |
-| 8 | Deduplicate against existing applications |
-| 9 | Update Google Sheets |
-| 10 | Publish prioritized recommendations |
+| 1 | Candidate profile and career context |
+| 2 | Gmail reconciliation |
+| 3 | Google Calendar reconciliation |
+| 4 | Existing tracker reconciliation |
+| 5 | Broad market discovery |
+| 6 | Opportunity evaluation |
+| 7 | Official posting verification |
+| 8 | Exact-requisition deduplication |
+| 9 | Google Sheets write-back |
+| 10 | Prioritized reporting |
 
-## 📋 Prompt 7 — Master FULL DEEP RERUN
+### 📋 Prompt 7 — Master FULL DEEP RERUN
 
 <details>
-<summary><b>🚀 Click to expand — FULL DEEP RERUN Master Prompt</b></summary>
+<summary><strong>🔥 Click to expand and copy the complete Master Prompt</strong></summary>
 
 ```text
-Perform my FULL DEEP RERUN.
+Perform my FULL DEEP RERUN for the
+High-Fit SDE Career Tracker.
 
 This is a complete reconciliation, market discovery,
-verification, scoring, and reporting workflow.
+verification, scoring, and prioritization process.
 
 Do not reduce this to a lightweight job-alert search.
 
@@ -859,7 +1092,7 @@ Review:
 - Canonical engineering profile
 - Resume
 - Career preferences
-- Compensation benchmark
+- Compensation and offer benchmark
 - Interview feedback
 - Application history
 - Relevant accessible prior context
@@ -868,7 +1101,7 @@ PHASE 2 — GMAIL RECONCILIATION
 
 Search all authorized connected Gmail accounts.
 
-Cover messages since the last successful run,
+Cover messages since the last successful reconciliation,
 including at least a 48-hour overlap.
 
 Search:
@@ -1057,61 +1290,73 @@ Never fabricate verification or successful updates.
 
 ---
 
+<a id="daily-usage"></a>
+
 # 🎮 Daily Usage
 
-Once configured, you can use short commands.
+Once the methodology is configured, you don't need to paste the complete prompts every time.
 
-| Command | Behavior |
+Use short natural-language commands.
+
+These are not software CLI commands. They work because the instructions are already established in your tracker conversation.
+
+### Available Commands
+
+| Command | Purpose |
 |---|---|
-| `RERUN` | Incremental reconciliation and relevant new jobs |
-| `FULL DEEP RERUN` | Complete 10-phase workflow |
-| `RERUN GMAIL` | Email and Calendar reconciliation only |
+| `RERUN` | Incremental Gmail, Calendar, tracker, and job updates |
+| `FULL DEEP RERUN` | Complete ten-phase workflow |
+| `RERUN GMAIL` | Gmail and Calendar reconciliation only |
+| `NEW JOBS ONLY` | Verified, deduplicated new opportunities |
+| `SHOW PIPELINE` | Active interviews, assessments, and applications |
 | `INTERVIEW PREP` | Preparation based on upcoming interviews |
-| `SHOW PIPELINE` | Active applications, interviews, and actions |
-| `NEW JOBS ONLY` | Verified, deduplicated fresh opportunities |
-| `COMPARE OFFERS` | Compensation, growth, risk, and flexibility |
+| `COMPARE OFFERS` | Compare compensation, growth, and flexibility |
 | `WHAT SHOULD I DO TODAY?` | Prioritized action list |
 
-These are **natural-language commands**, not software CLI commands. They work by referencing the instructions established in the tracker conversation.
-
-### Example: Application Update
+### Example — Application Update
 
 ```text
-Applied to Stripe — Senior Backend Engineer.
+I applied to Stripe — Senior Backend Engineer.
 
-Here is the job link:
-[PASTE LINK]
+Job URL:
+[PASTE DIRECT APPLICATION LINK]
 
-Update my tracker and verify the application.
+Update my tracker.
+
+Preserve the exact requisition ID.
 ```
 
-### Example: Interview Update
+### Example — Interview Feedback
 
 ```text
 I completed my interview with Company X.
 
-The interview covered:
+Topics covered:
 - Hash maps
+- REST API design
 - Distributed systems
-- API design
 
-I struggled with:
+Areas I struggled with:
 - Dynamic programming
 
-Update the tracker and adjust my preparation plan.
+Update the application status.
+
+Save the interview feedback.
+
+Adjust my preparation priorities.
 ```
 
-### Example: Offer Comparison
+### Example — Offer Comparison
 
 ```text
 I received an offer from Company X.
 
-Base: CAD 175,000
+Base Salary: CAD 175,000
 Bonus: 10%
 Equity: CAD 30,000/year estimated
-Location: Remote Canada
+Arrangement: Remote Canada
 
-Compare it against my existing benchmark.
+Compare it with my existing compensation benchmark.
 
 Evaluate:
 - Compensation
@@ -1120,57 +1365,120 @@ Evaluate:
 - Stability
 - Remote flexibility
 - Long-term upside
+- Opportunity cost
 ```
 
 ---
 
-# ⏰ Automation Setup
+<a id="interview-preparation"></a>
 
-A recurring automation can run incremental reconciliation and deliver updates without requiring a manual prompt every day.
+# 🎯 Interview Preparation
 
-## Recommended Schedule
+The tracker should prioritize interview preparation based on actual opportunities rather than generic coding schedules.
 
-| Automation | Frequency | Purpose |
-|---|---|---|
-| Daily RERUN | Daily, 8:00 AM | Gmail, pipeline, and job updates |
-| FULL DEEP RERUN | Manual / Optional Weekly | Broad market research and complete review |
+For example:
 
-> [!IMPORTANT]
-> Scheduled tasks, connected-app access, and delivery destinations depend on available ChatGPT capabilities. Test that the scheduled task can access the required apps and update the spreadsheet. Exact delivery into an existing conversation may not always be supported.
+| Upcoming Interview | Recommended Preparation |
+|---|---|
+| Backend Engineer | APIs, Java/Python, SQL, distributed systems |
+| Platform Engineer | Linux, cloud architecture, reliability |
+| Full Stack Engineer | Frontend/backend coding, system design |
+| Senior Software Engineer | System design, ownership, leadership |
+| Infrastructure Engineer | Cloud, networking, observability, debugging |
 
-## 📋 Prompt 8 — Daily Automation
+### 📋 Interview Preparation Prompt
 
 <details>
-<summary><b>⏰ Click to expand — Automation Prompt</b></summary>
+<summary><strong>🎯 Click to expand and copy the Interview Preparation Prompt</strong></summary>
 
 ```text
-Create one recurring automation named:
+INTERVIEW PREP
+
+Read my upcoming confirmed interviews and relevant
+job descriptions.
+
+Use:
+- My canonical engineering profile
+- Resume
+- Previous interview feedback
+- Technical strengths and weaknesses
+- Actual Calendar availability
+- Interview dates and expected formats
+
+Build a prioritized preparation plan.
+
+Include:
+
+1. Coding topics
+2. Data structures and algorithms
+3. System design
+4. Backend and API engineering
+5. Relevant language/framework review
+6. Behavioral and leadership stories
+7. Mock interview recommendations
+8. Highest-risk knowledge gaps
+
+Prioritize the nearest and most valuable interviews.
+
+Do not allocate preparation time I do not actually have.
+
+Distinguish confirmed interviews from tentative scheduling.
+```
+
+</details>
+
+---
+
+<a id="automation"></a>
+
+# ⏰ Scheduled Automation
+
+A recurring task can help maintain the tracker without requiring you to remember to request updates.
+
+### Recommended Starting Configuration
+
+| Task | Frequency | Purpose |
+|---|---|---|
+| **Daily RERUN** | Every morning | Gmail, pipeline, and relevant market changes |
+| **FULL DEEP RERUN** | Manual or optional weekly | Broad discovery and complete reconciliation |
+
+A full market rebuild every day is often unnecessary.
+
+For most users, a daily incremental report and occasional deep research provide a better balance.
+
+### 📋 Prompt 8 — Create Daily Automation
+
+<details>
+<summary><strong>⏰ Click to expand and copy Prompt 8</strong></summary>
+
+```text
+Create exactly one recurring automation named:
 
 High-Fit SDE Daily Tracker
 
-Schedule:
-Every day at 8:00 AM in my local timezone.
+Schedule it every day at 8:00 AM
+in my local timezone.
 
-On each run:
+ON EACH RUN:
 
 1. Perform incremental Gmail reconciliation.
-2. Include at least 48 hours of overlap.
+2. Include at least a 48-hour overlap.
 3. Check all authorized connected Gmail accounts.
 4. Reconcile upcoming Calendar events.
-5. Read my existing Google Sheets tracker.
+5. Read the existing Google Sheets tracker.
 6. Update application and recruiter statuses.
-7. Check tracked postings.
+7. Check tracked job postings.
 8. Discover relevant new opportunities.
-9. Verify direct job links.
+9. Verify direct application links.
 10. Deduplicate against existing applications.
-11. Identify deadlines and interviews.
+11. Identify interviews and deadlines.
 12. Publish a prioritized action report.
 
-Report sections:
+REPORT SECTIONS:
 
 - Interviews / Action Required
 - Meaningful Company Updates
-- New High-Value Jobs
+- New High-Value Roles
 - Applied — Waiting
 - Closing Soon
 - Rejected / Closed
@@ -1182,36 +1490,49 @@ Keep unchanged items concise.
 Use the existing tracker.
 
 Do not create duplicate spreadsheets
-or duplicate recurring automations.
+or duplicate recurring career automations.
 
 Deliver into this tracker conversation if supported.
 
-If a connection, write, or delivery action fails,
-report the limitation instead of claiming success.
+If an integration, spreadsheet write,
+or delivery action fails, report the limitation.
+
+Do not claim successful execution without evidence.
 ```
 
 </details>
 
+> [!IMPORTANT]
+> Scheduled tasks may have different tool access from interactive chats.
+>
+> Verify that the automation can access your integrations, update the spreadsheet, and deliver results to the intended destination.
+>
+> Exact delivery into a specific existing conversation may not be supported in every environment.
+
 ---
 
-# 🧪 Acceptance Testing
+<a id="validation"></a>
 
-Before relying on the system, verify it works.
+# 🧪 Validate Your Setup
 
-## 📋 Prompt 9 — System Validation
+Before relying on the tracker, run a simple acceptance test.
+
+A polished-looking response does not prove that Gmail was checked or Google Sheets was updated.
+
+### 📋 Prompt 9 — Acceptance Test
 
 <details>
-<summary><b>🧪 Click to expand — Acceptance Test Prompt</b></summary>
+<summary><strong>🧪 Click to expand and copy Prompt 9</strong></summary>
 
 ```text
 Run an acceptance test of my High-Fit SDE Tracker.
 
-Check:
+VERIFY:
 
 1. Candidate profile exists.
 2. Career preferences are available.
 3. Correct Google Sheet is accessible.
-4. All six tabs exist.
+4. All six expected tabs exist.
 5. Gmail read access works.
 6. Calendar read access works.
 7. Applications can be reconciled against emails.
@@ -1242,30 +1563,12 @@ unless essential tests actually pass.
 
 ---
 
-# 🔒 Data Privacy & Safety
+<a id="troubleshooting"></a>
 
-This workflow can access sensitive personal information.
-
-### Recommended Practices
-
-- Connect only accounts you trust ChatGPT to access.
-- Review the permissions granted to integrations.
-- Avoid uploading passwords, government IDs, or unnecessary financial records.
-- Do not publish personal resumes, recruiter emails, or private spreadsheet URLs in a public repository.
-- Keep your Google Sheet private unless you intentionally share it.
-- Require explicit approval before sending recruiter emails or submitting applications.
-- Verify consequential actions before assuming completion.
-- Periodically review connected-app permissions.
-
-> [!CAUTION]
-> This repository should contain **prompts and documentation only**. Never commit OAuth credentials, access tokens, private email exports, or personal application data.
-
----
-
-# 🧩 Troubleshooting
+# 🔧 Troubleshooting
 
 <details>
-<summary><b>ChatGPT keeps recommending jobs I've already applied to</b></summary>
+<summary><strong>❓ ChatGPT keeps recommending jobs I've already applied to</strong></summary>
 
 Run:
 
@@ -1281,24 +1584,24 @@ Preserve previously applied and rejected records.
 </details>
 
 <details>
-<summary><b>The tracker is not updating Google Sheets</b></summary>
+<summary><strong>❓ Google Sheets is not updating</strong></summary>
 
 Check:
 
 1. Google Drive is connected.
-2. ChatGPT has spreadsheet write permission.
-3. The spreadsheet ID is correct.
+2. The spreadsheet ID is correct.
+3. ChatGPT has editing permissions.
 4. The correct tab and row were selected.
-5. The write actually succeeded.
+5. The write operation succeeded.
 
-Then request a read-back verification.
+Ask ChatGPT to read the updated cells back before claiming success.
 
 </details>
 
 <details>
-<summary><b>Recruiter emails are being missed</b></summary>
+<summary><strong>❓ Recruiter emails are being missed</strong></summary>
 
-Request:
+Run:
 
 ```text
 Perform a fresh broad Gmail reconciliation.
@@ -1317,20 +1620,20 @@ Do not rely only on unread emails.
 </details>
 
 <details>
-<summary><b>The automation posts into another conversation</b></summary>
+<summary><strong>❓ The scheduled report appears in another conversation</strong></summary>
 
-Ask ChatGPT to inspect the existing automation and its delivery behavior.
+Ask ChatGPT to inspect the existing task and its supported delivery behavior.
 
-Do not create duplicate automations to solve this.
+Avoid creating duplicate automations.
 
-If exact-chat delivery is unsupported, use the automation's supported destination and keep the same Google Sheet as the source of truth.
+If exact-chat delivery is unavailable, keep Google Sheets as the authoritative database and use the supported report destination.
 
 </details>
 
 <details>
-<summary><b>Job links are broken or expired</b></summary>
+<summary><strong>❓ Job links are broken or expired</strong></summary>
 
-Request:
+Run:
 
 ```text
 Verify each shortlisted requisition on the official
@@ -1338,15 +1641,15 @@ employer or ATS website.
 
 Mark broken, removed, expired, or unverified listings.
 
-Do not recommend a search-results page as an application link.
+Do not recommend search-results pages as application links.
 ```
 
 </details>
 
 <details>
-<summary><b>The recommendations are too ambitious or too conservative</b></summary>
+<summary><strong>❓ Job recommendations are too ambitious or conservative</strong></summary>
 
-Ask ChatGPT to adjust the relative emphasis on:
+Adjust the emphasis on:
 
 - Resume fit
 - Interview readiness
@@ -1355,34 +1658,82 @@ Ask ChatGPT to adjust the relative emphasis on:
 - Compensation
 - Preparation time
 
-Do not change verified candidate experience or invent qualifications to improve scores.
+Do not invent qualifications to improve scores.
+
+</details>
+
+<details>
+<summary><strong>❓ I don't have access to all the required integrations</strong></summary>
+
+You can still use:
+
+- Resume analysis
+- Job discovery
+- Job matching
+- Interview preparation
+- Manual application updates
+- Offer comparisons
+
+Ask ChatGPT to identify which capabilities are unavailable.
+
+Never assume an unavailable integration has been used.
 
 </details>
 
 ---
 
-# 🗺️ Evolution of the System
+<a id="privacy"></a>
 
-The methodology behind this starter kit was developed iteratively between July and October 2026.
+# 🔐 Privacy & Responsible Use
 
-| Period | Evolution |
+This workflow may access personal career information and private communications.
+
+### Recommended Practices
+
+- Connect only accounts you want the tracker to access.
+- Review the permissions granted to integrations.
+- Avoid uploading passwords or unnecessary sensitive documents.
+- Keep your application spreadsheet private.
+- Do not publish personal resumes or recruiter correspondence.
+- Require explicit approval before sending emails or submitting applications.
+- Verify important actions before assuming they were completed.
+- Review connected-app permissions periodically.
+
+> [!CAUTION]
+> This public guide contains reusable prompts and methodology only.
+>
+> Never commit OAuth tokens, private email exports, credentials, personal application data, or private Google Sheets links into a public GitHub repository.
+
+---
+
+<a id="evolution"></a>
+
+# 🧬 How This Methodology Evolved
+
+This system grew out of a real engineering job-search workflow developed and refined between **July and October 2026**.
+
+It did not begin as a fully designed career management platform.
+
+It evolved through repeated practical problems and improvements.
+
+| Period | Major Development |
 |---|---|
-| Late July | Engineering profile, skills, and interview preparation |
-| August | Broader role matching, salary research, and job-search workflows |
-| Early September | Repeatable searches, Gmail reconciliation, and application tracking |
-| Mid September | Persistent Google Sheets database and scheduled reporting |
-| Late September | FULL DEEP RERUN, deduplication, scoring, and verification |
-| October | Offer-based benchmarking, interview-driven prioritization, and refined automation |
+| **Late July 2026** | Resume understanding, technical skills, interview preparation |
+| **August 2026** | Broader role discovery, compensation research, career preferences |
+| **Early September 2026** | Repeated searches, application tracking, Gmail reconciliation |
+| **Mid September 2026** | Persistent Google Sheets database, active pipeline, automation |
+| **Late September 2026** | FULL DEEP RERUN methodology, scoring, verification, deduplication |
+| **October 2026** | Offer-based benchmarking, interview prioritization, refined reporting |
 
-### Key Lessons
+### Eight Important Lessons
 
 **1. Search responsibilities, not titles.**
 
-A great engineering opportunity may have an unexpected title.
+An excellent engineering opportunity may have an unexpected title.
 
 **2. Reconcile before recommending.**
 
-Your inbox and application history matter as much as fresh job listings.
+Existing applications and recruiter correspondence matter as much as new job listings.
 
 **3. Maintain one source of truth.**
 
@@ -1390,83 +1741,209 @@ Multiple competing trackers create confusion.
 
 **4. Verify actual requisitions.**
 
-Search results are not proof that a job is open.
+A search result does not prove that a job is still accepting applications.
 
 **5. Separate fit from readiness.**
 
-A candidate can be qualified but still need preparation.
+Someone can be qualified for a role but still need interview preparation.
 
 **6. Compare against your current benchmark.**
 
-A job is not automatically better because it pays more or has a prestigious employer.
+Not every new opportunity is better than your current position or existing offer.
 
 **7. Preserve history.**
 
-Rejected and expired applications are valuable information.
+Rejected and expired applications provide valuable context.
 
 **8. Make every report actionable.**
 
-The best report answers:
+The most useful report answers:
 
 > **What should I do today to improve my chances of landing a better engineering role?**
 
 ---
 
-# 🚀 Launch Checklist
+<a id="faq"></a>
 
-- [ ] Connect Gmail
-- [ ] Connect Google Calendar
-- [ ] Connect Google Drive
-- [ ] Create dedicated tracker conversation
-- [ ] Upload resume
-- [ ] Build canonical candidate profile
-- [ ] Set compensation and location preferences
-- [ ] Create Google Sheets tracker
-- [ ] Configure matching and deduplication
-- [ ] Import historical applications
-- [ ] Run first FULL DEEP RERUN
-- [ ] Configure daily automation
-- [ ] Run acceptance test
+# ❓ Frequently Asked Questions
 
-**You're ready to start.**
+<details>
+<summary><strong>Is this a standalone application?</strong></summary>
+
+No.
+
+This is a reusable prompt-driven workflow designed to run inside ChatGPT using supported integrations.
+
+It does not require cloning a repository, running a server, or installing software packages.
+
+</details>
+
+<details>
+<summary><strong>Do I need coding experience to configure it?</strong></summary>
+
+No.
+
+The setup consists primarily of connecting apps, uploading a resume, and copying prompts into ChatGPT.
+
+</details>
+
+<details>
+<summary><strong>Is the setup really 15 minutes?</strong></summary>
+
+The initial hands-on configuration can take approximately 10–15 minutes when the required integrations are available.
+
+The first historical reconciliation, spreadsheet creation, market research, and validation may take longer.
+
+</details>
+
+<details>
+<summary><strong>Does it automatically apply to jobs?</strong></summary>
+
+Not by default.
+
+The system is designed primarily for discovery, evaluation, tracking, and preparation.
+
+Application submission should remain an explicit user-approved action.
+
+</details>
+
+<details>
+<summary><strong>Does it work for SDET, QA Automation, or DevOps roles?</strong></summary>
+
+Yes.
+
+The matching methodology can be adapted to adjacent technical careers.
+
+This guide focuses on Software Development Engineer and Software Engineer positions.
+
+For another discipline, adjust the candidate profile, eligible job families, and scoring criteria.
+
+</details>
+
+<details>
+<summary><strong>Can it work without Gmail?</strong></summary>
+
+Yes, with reduced functionality.
+
+You can manually provide application updates and recruiter correspondence.
+
+Automatic email reconciliation requires an authorized Gmail connection and supported tool access.
+
+</details>
+
+<details>
+<summary><strong>Can it use an existing Google Sheet?</strong></summary>
+
+Yes, where spreadsheet access and editing are supported.
+
+Ask ChatGPT to inspect and adapt the existing workbook rather than creating a replacement.
+
+</details>
+
+<details>
+<summary><strong>Will it remember every application forever?</strong></summary>
+
+Do not rely on conversation memory alone.
+
+Google Sheets is the intended persistent source of truth.
+
+The tracker should read and reconcile that spreadsheet during future runs.
+
+</details>
+
+<details>
+<summary><strong>Are the job-fit scores guaranteed to predict hiring outcomes?</strong></summary>
+
+No.
+
+The scores are structured assessments to support prioritization.
+
+Actual interview outcomes depend on many factors, including employer requirements, candidate pool, timing, and interview performance.
+
+</details>
 
 ---
 
-# 🤝 Contributing
+<a id="launch-checklist"></a>
 
-Contributions and improvements are welcome.
+# ✅ Final Launch Checklist
 
-Ideas for future enhancements:
+### Integrations
 
-- GitHub integration for technical portfolio analysis
-- Resume-to-job-description gap analysis
-- Application conversion analytics
-- Interview preparation progress tracking
-- Compensation benchmarking dashboards
-- Recruiter response-time analytics
-- Resume version tracking
-- Automatic follow-up draft generation
-- Engineering skill development roadmaps
-- Multi-provider ATS integration
+- [ ] Gmail connected
+- [ ] Google Calendar connected
+- [ ] Google Drive connected
+
+### Candidate Profile
+
+- [ ] Resume uploaded
+- [ ] Engineering experience analyzed
+- [ ] Career preferences configured
+- [ ] Compensation benchmark established
+
+### Tracking System
+
+- [ ] Google Sheets tracker created
+- [ ] Six tabs verified
+- [ ] Matching rules configured
+- [ ] Deduplication configured
+
+### Initial Run
+
+- [ ] Historical applications reconciled
+- [ ] First FULL DEEP RERUN completed
+- [ ] Application records verified
+- [ ] Important recruiter actions identified
+
+### Automation
+
+- [ ] Daily task created
+- [ ] Schedule verified
+- [ ] Delivery behavior tested
+- [ ] Spreadsheet write-back tested
 
 ---
 
-# 📄 License
+<a id="contact"></a>
 
-This template is intended to be reusable and customizable.
+# 🤝 Feedback & Contact
 
-If you want to distribute it under the MIT License, add a separate `LICENSE` file containing the official MIT License text and the appropriate copyright holder.
+This guide is shared publicly to help other software engineers build a more structured, efficient, and informed job-search process.
+
+It is based on a real workflow refined through repeated job searches, recruiter interactions, technical interviews, application tracking, and career decisions.
+
+The methodology can be adapted to different experience levels, locations, and engineering disciplines.
+
+If you try it, improve it, or have suggestions, I'd be happy to hear about your experience.
+
+### 👨‍💻 Connect with Me
+
+**Rishabh Chauhan**
+
+[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-Rishabh_Chauhan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rishabhchauhan27892)
+
+**[💬 Reach out on LinkedIn](https://www.linkedin.com/in/rishabhchauhan27892)**
 
 ---
 
 <div align="center">
 
-## ⭐ Stop Tracking Jobs. Start Managing Your Career.
-
-**Built for software engineers who want a smarter, more structured job search.**
-
-`ChatGPT` + `Gmail` + `Google Calendar` + `Google Sheets` + `AI Automation`
+## 🚀 Stop Tracking Jobs. Start Managing Your Career.
 
 **From resume to offer — one intelligent workflow.**
 
+<br>
+
+`ChatGPT` + `Gmail` + `Google Calendar` + `Google Sheets` + `AI Automation`
+
+<br>
+
+**Built for engineers. Designed to be reused. Shared to help others.**
+
+<br>
+
+[⬆️ Back to Top](#top)
+
 </div>
+
+<a id="top"></a>
